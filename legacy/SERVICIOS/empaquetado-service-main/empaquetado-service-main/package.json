@@ -1,0 +1,41 @@
+{
+  "name": "empaquetado-service",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "engines": {
+    "node": ">=24.4.0 <25",
+    "npm": ">=11 <13"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs && npm run db:migrate -w api",
+    "dev": "concurrently --kill-others --names API,WEB --prefix-colors cyan,magenta \"npm run dev -w api\" \"npm run dev -w web\"",
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build --workspaces",
+    "start": "concurrently --kill-others --names API,WEB \"npm start -w api\" \"npm start -w web\"",
+    "typecheck": "npm run typecheck --workspaces && tsc -p tsconfig.e2e.json",
+    "lint": "npm run lint --workspaces",
+    "test": "npm test -w api",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build",
+    "db:migrate": "npm run db:migrate -w api",
+    "db:seed": "npm run db:seed -w api",
+    "docs:export": "npm run docs:export -w api",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "concurrently": "^9.2.1",
+    "prettier": "3.9.9",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "@fastify/swagger-ui": "6.1.1"
+  }
+}

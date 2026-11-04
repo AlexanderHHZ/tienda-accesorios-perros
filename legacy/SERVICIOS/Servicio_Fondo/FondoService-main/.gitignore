@@ -1,0 +1,23 @@
+# Archivos generados por .NET
+**/bin/
+**/obj/
+artifacts/
+TestResults/
+
+# Configuración local de los editores
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Archivos locales y credenciales
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+*.pfx
+*.p12
+*.log
+.DS_Store
+Thumbs.db

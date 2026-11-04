@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Demo — Encabezado modular de tienda</title>
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #14181f; background:#f6f7f9; }
+  main { max-width: 1280px; margin: 40px auto; padding: 0 24px 80px; }
+  h1 { font-size: 1.5rem; }
+  section { margin-top: 40px; }
+  .swatches { display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
+  .swatch { padding:10px 16px; border-radius:8px; cursor:pointer; border:1px solid #e6e8ec; background:#fff; font-size:.875rem; }
+  .log { background:#0d1117; color:#7ee787; font-family: ui-monospace, monospace; font-size:.8125rem; padding:16px; border-radius:8px; height:140px; overflow-y:auto; margin-top:12px; }
+  code { background:#eef0f3; padding:2px 6px; border-radius:4px; font-size:.875em; }
+</style>
+</head>
+<body>
+
+<!-- 1) Encabezado usando SOLO atributos (forma más simple) -->
+<tienda-header
+  id="header1"
+  store-name="Nortech Store"
+  logo-href="#inicio"
+  show-search="true"
+  show-login="true"
+  show-cart="true"
+  cart-count="3"
+  sticky
+  menu='[
+    {"label":"Inicio","href":"#"},
+    {"label":"Catálogo","children":[
+      {"label":"Electrónica","href":"#"},
+      {"label":"Hogar","href":"#"},
+      {"label":"Ofertas","href":"#"}
+    ]},
+    {"label":"Nosotros","href":"#"},
+    {"label":"Contacto","href":"#"}
+  ]'
+></tienda-header>
+
+<main>
+  <h1>Demo del encabezado modular</h1>
+  <p>Este encabezado es un único componente (<code>&lt;tienda-header&gt;</code>) que puedes copiar a cualquier tienda o página. No depende de ningún framework.</p>
+
+  <section>
+    <h2>Prueba de personalización en vivo</h2>
+    <p>Cambia la paleta con las variables CSS <code>--th-accent</code>, <code>--th-bg</code>, <code>--th-text</code>:</p>
+    <div class="swatches">
+      <button class="swatch" data-accent="#3454d1" data-bg="#ffffff" data-text="#14181f">Azul (defecto)</button>
+      <button class="swatch" data-accent="#0f6b5c" data-bg="#ffffff" data-text="#0f1a17">Verde bosque</button>
+      <button class="swatch" data-accent="#b23a48" data-bg="#fff9f5" data-text="#241512">Terracota oscuro</button>
+      <button class="swatch" data-accent="#e8e8ec" data-bg="#0d0f12" data-text="#f4f5f7">Oscuro (dark mode)</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Eventos emitidos</h2>
+    <p>El componente no navega ni abre carritos por sí mismo: emite eventos para que tu propio código decida qué hacer (ir a otra página, abrir un modal, llamar a tu API, etc.).</p>
+    <div class="log" id="log"></div>
+  </section>
+
+  <section>
+    <h2>Segundo encabezado, con logo en imagen y sesión iniciada</h2>
+  </section>
+</main>
+
+<!-- 2) Encabezado con logo-src y usuario ya autenticado -->
+<tienda-header
+  id="header2"
+  store-name="Casa Verde"
+  logo-src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><rect width='32' height='32' rx='8' fill='%230f6b5c'/><text x='16' y='21' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif'>CV</text></svg>"
+  user-name="María"
+  show-search="true"
+  show-cart="true"
+  style="--th-accent:#0f6b5c;"
+  menu='[{"label":"Plantas","href":"#"},{"label":"Macetas","href":"#"},{"label":"Blog","href":"#"}]'
+></tienda-header>
+
+<script src="tienda-header.js"></script>
+<script>
+  const log = document.getElementById('log');
+  function print(msg) {
+    const line = document.createElement('div');
+    line.textContent = msg;
+    log.appendChild(line);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  const header1 = document.getElementById('header1');
+  header1.addEventListener('header-search', (e) => print(`🔍 Búsqueda: "${e.detail.query}"`));
+  header1.addEventListener('cart-click', (e) => print(`🛒 Carrito abierto (${e.detail.count} artículos)`));
+  header1.addEventListener('login-click', () => print(`👤 Clic en "Iniciar sesión"`));
+  header1.addEventListener('menu-toggle', (e) => print(`📱 Menú móvil: ${e.detail.open ? 'abierto' : 'cerrado'}`));
+  header1.addEventListener('logo-click', () => print(`🏠 Clic en logo → ir a inicio`));
+
+  document.querySelectorAll('.swatch').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      header1.style.setProperty('--th-accent', btn.dataset.accent);
+      header1.style.setProperty('--th-bg', btn.dataset.bg);
+      header1.style.setProperty('--th-text', btn.dataset.text);
+    });
+  });
+
+  // Ejemplo de API JS: simular que llega un producto nuevo al carrito
+  setTimeout(() => header1.setCartCount(4), 3000);
+</script>
+</body>
+</html>

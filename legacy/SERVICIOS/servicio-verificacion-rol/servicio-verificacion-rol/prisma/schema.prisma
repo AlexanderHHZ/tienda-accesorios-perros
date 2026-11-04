@@ -1,0 +1,36 @@
+// Subconjunto del modelo BD02 necesario para el servicio de Control de Acceso.
+// El resto de las tablas (PRODUCTOS, VENTAS, COMPRAS, etc.) se van agregando
+// en este mismo schema conforme se programen los siguientes servicios.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // cambiar a "mysql" o "sqlserver" segun el motor real
+  url      = env("DATABASE_URL")
+}
+
+model Rol {
+  id         Int       @id @default(autoincrement())
+  nombreRol  String    @map("nombre_rol") @db.VarChar(50)
+  descripcion String?  @db.VarChar(150)
+  usuarios   Usuario[]
+
+  @@map("ROLES")
+}
+
+model Usuario {
+  id              Int      @id @default(autoincrement())
+  nombre          String   @db.VarChar(100)
+  correo          String   @unique @db.VarChar(150)
+  telefono        String?  @db.VarChar(20)
+  passwordHash    String   @map("password_hash") @db.VarChar(255)
+  idRol           Int      @map("id_rol")
+  rol             Rol      @relation(fields: [idRol], references: [id])
+  estado          String   @default("activo") @db.VarChar(20)
+  intentosFallidos Int     @default(0) @map("intentos_fallidos")
+  fechaRegistro   DateTime @default(now()) @map("fecha_registro")
+
+  @@map("USUARIOS")
+}

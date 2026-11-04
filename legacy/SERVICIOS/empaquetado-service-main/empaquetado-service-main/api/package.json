@@ -1,0 +1,40 @@
+{
+  "name": "@empaquetado/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.4.0 <25"
+  },
+  "scripts": {
+    "dev": "node --watch --import tsx src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:migrate": "node --import tsx src/db/migrate-cli.ts",
+    "db:seed": "node --import tsx src/db/seed.ts",
+    "docs:export": "node --import tsx src/export-openapi.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "11.3.0",
+    "@fastify/helmet": "13.1.1",
+    "@fastify/swagger": "9.9.1",
+    "@fastify/swagger-ui": "^6.1.1",
+    "fastify": "5.12.5",
+    "fastify-type-provider-zod": "7.0.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@apidevtools/swagger-parser": "12.1.0",
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.1",
+    "eslint": "10.12.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1",
+    "vitest": "5.0.3"
+  }
+}

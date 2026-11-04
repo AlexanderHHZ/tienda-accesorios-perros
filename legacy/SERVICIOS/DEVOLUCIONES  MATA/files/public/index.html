@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicio de Devoluciones</title>
+<style>
+  :root { --azul:#1f4fd8; --fondo:#f4f6fb; --ok:#188a4a; --mal:#c62828; }
+  * { box-sizing:border-box; }
+  body { font-family:system-ui,Segoe UI,Arial,sans-serif; background:var(--fondo); margin:0; color:#1b1f2a; }
+  header { background:var(--azul); color:#fff; padding:18px 24px; }
+  header h1 { margin:0; font-size:1.4rem; }
+  main { max-width:900px; margin:24px auto; padding:0 16px; display:grid; gap:20px; }
+  .card { background:#fff; border-radius:12px; padding:20px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  h2 { margin-top:0; font-size:1.1rem; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:600px){ .grid{grid-template-columns:1fr;} }
+  label { display:block; font-size:.85rem; font-weight:600; margin-bottom:4px; }
+  input, select, textarea { width:100%; padding:9px 10px; border:1px solid #c9cfdd; border-radius:8px; font:inherit; }
+  textarea { min-height:70px; resize:vertical; }
+  .full { grid-column:1/-1; }
+  .fila { display:flex; gap:8px; }
+  button { background:var(--azul); color:#fff; border:0; border-radius:8px; padding:10px 18px; font:inherit; cursor:pointer; }
+  button.sec { background:#e6e9f2; color:#1b1f2a; }
+  button:disabled { opacity:.5; cursor:not-allowed; }
+  .msg { margin-top:12px; padding:12px 14px; border-radius:8px; font-size:.92rem; }
+  .ok { background:#e6f6ec; border:1px solid var(--ok); }
+  .mal { background:#fdeaea; border:1px solid var(--mal); }
+  .info { font-size:.85rem; color:#4a5164; margin:6px 0 0; }
+  table { width:100%; border-collapse:collapse; font-size:.88rem; }
+  th, td { text-align:left; padding:8px; border-bottom:1px solid #e3e6ee; }
+  .badge { padding:2px 8px; border-radius:99px; font-size:.78rem; color:#fff; }
+  .badge.aceptada { background:var(--ok); } .badge.rechazada { background:var(--mal); }
+  .tabla-wrap { overflow-x:auto; }
+</style>
+</head>
+<body>
+<header><h1>Servicio de Devoluciones</h1></header>
+<main>
+
+  <section class="card">
+    <h2>Registrar devolución</h2>
+    <form id="form" class="grid" novalidate>
+      <div>
+        <label for="id_venta">ID de la venta</label>
+        <div class="fila">
+          <input id="id_venta" type="number" min="1" required>
+          <button type="button" class="sec" id="btnBuscar">Buscar</button>
+        </div>
+        <p class="info" id="infoVenta">Ingresa el ID y pulsa Buscar (prueba con 1).</p>
+      </div>
+      <div>
+        <label for="id_producto">Producto</label>
+        <select id="id_producto" required disabled><option value="">— Busca una venta primero —</option></select>
+      </div>
+      <div>
+        <label for="cantidad">Cantidad a devolver</label>
+        <input id="cantidad" type="number" min="1" required>
+      </div>
+      <div>
+        <label for="fecha">Fecha de devolución</label>
+        <input id="fecha" type="date" required>
+      </div>
+      <div>
+        <label for="nombre">Nombre del cliente</label>
+        <input id="nombre" type="text" required>
+      </div>
+      <div>
+        <label for="email">Correo del cliente</label>
+        <input id="email" type="email" required>
+      </div>
+      <div class="full">
+        <label for="motivo">Motivo de la devolución</label>
+        <textarea id="motivo" required></textarea>
+      </div>
+      <div class="full"><button type="submit" id="btnEnviar">Registrar devolución</button></div>
+    </form>
+    <div id="resultado"></div>
+  </section>
+
+  <section class="card">
+    <h2>Historial de devoluciones</h2>
+    <div class="tabla-wrap">
+      <table>
+        <thead><tr><th>No.</th><th>Venta</th><th>Producto</th><th>Cant.</th><th>Estado</th><th>Motivo</th><th>Fecha</th><th>Reembolso</th></tr></thead>
+        <tbody id="tbody"><tr><td colspan="8">Cargando…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Si se fusiona con otro backend, cambia solo esta constante (ej. 'https://mi-servidor.com')
+  const API = '';
+
+  const $ = id => document.getElementById(id);
+  $('fecha').value = new Date().toISOString().slice(0, 10);
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  // Buscar venta y llenar productos
+  $('btnBuscar').addEventListener('click', async () => {
+    const id = $('id_venta').value;
+    const sel = $('id_producto');
+    if (!id) return;
+    try {
+      const r = await fetch(`${API}/api/ventas/${id}`);
+      const data = await r.json();
+      if (!r.ok) throw new Error(data.error);
+      $('infoVenta').textContent = `Venta del ${data.fecha} — cliente: ${data.cliente}`;
+      sel.innerHTML = data.productos.map(p =>
+        `<option value="${p.id_producto}">${esc(p.nombre)} (disponibles: ${p.disponible})</option>`).join('');
+      sel.disabled = false;
+    } catch (e) {
+      $('infoVenta').textContent = e.message || 'Error al buscar la venta';
+      sel.innerHTML = '<option value="">—</option>'; sel.disabled = true;
+    }
+  });
+
+  // Enviar devolución
+  $('form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const body = {
+      id_venta: parseInt($('id_venta').value),
+      id_producto: parseInt($('id_producto').value),
+      cantidad: parseInt($('cantidad').value),
+      motivo: $('motivo').value,
+      fecha_devolucion: $('fecha').value,
+      cliente: { nombre: $('nombre').value, email: $('email').value }
+    };
+    $('btnEnviar').disabled = true;
+    const out = $('resultado');
+    try {
+      const r = await fetch(`${API}/api/devoluciones`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+      });
+      const d = await r.json();
+      if (r.status === 400) {
+        out.innerHTML = `<div class="msg mal"><b>${esc(d.error)}</b><ul>${(d.detalles||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`;
+      } else {
+        const ok = d.estado === 'aceptada';
+        out.innerHTML = `<div class="msg ${ok ? 'ok' : 'mal'}">
+          <b>${esc(d.mensaje)}</b><br>
+          No. de devolución: ${esc(d.numero_devolucion ?? '—')} · Estado: ${esc(d.estado)}<br>
+          Procesada: ${new Date(d.fecha_procesamiento).toLocaleString()}
+          ${ok ? `<br>Reembolso: $${d.reembolso.monto.toFixed(2)} ${d.reembolso.moneda} — ${esc(d.reembolso.metodo)}` : ''}
+        </div>`;
+        cargarHistorial();
+      }
+    } catch (e) {
+      out.innerHTML = `<div class="msg mal">No se pudo conectar con el servidor.</div>`;
+    } finally { $('btnEnviar').disabled = false; }
+  });
+
+  // Historial
+  async function cargarHistorial() {
+    try {
+      const r = await fetch(`${API}/api/devoluciones`);
+      const filas = await r.json();
+      $('tbody').innerHTML = filas.length ? filas.map(f => `<tr>
+        <td>${f.numero_devolucion}</td><td>${f.id_venta}</td><td>${esc(f.producto)}</td><td>${f.cantidad}</td>
+        <td><span class="badge ${f.estado}">${f.estado}</span></td><td>${esc(f.motivo)}</td>
+        <td>${esc(f.fecha_devolucion)}</td><td>$${Number(f.monto_reembolso).toFixed(2)}</td></tr>`).join('')
+        : '<tr><td colspan="8">Aún no hay devoluciones.</td></tr>';
+    } catch { $('tbody').innerHTML = '<tr><td colspan="8">No se pudo cargar el historial.</td></tr>'; }
+  }
+  cargarHistorial();
+</script>
+</body>
+</html>

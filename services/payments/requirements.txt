@@ -1,0 +1,2 @@
+# Perfil local: solo biblioteca estándar de Python 3.11 o superior.
+# El servicio original FastAPI y sus dependencias están en legacy/.

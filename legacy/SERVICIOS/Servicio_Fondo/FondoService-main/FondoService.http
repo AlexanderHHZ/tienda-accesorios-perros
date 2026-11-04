@@ -1,0 +1,70 @@
+# El puerto debe coincidir con "Now listening on" al ejecutar dotnet run.
+# El perfil http de Properties/launchSettings.json utiliza inicialmente 5209.
+@FondoService_HostAddress = http://localhost:5209
+# Después de POST color, sustituye este valor por el id devuelto.
+@BackgroundId = 4
+
+### GET todos (incluye configuraciones inactivas)
+GET {{FondoService_HostAddress}}/api/background
+Accept: application/json
+
+### GET configuración activa de home
+GET {{FondoService_HostAddress}}/api/background/home
+Accept: application/json
+
+### GET por ID (home inicial)
+GET {{FondoService_HostAddress}}/api/background/id/1
+Accept: application/json
+
+### POST color (ejecutar una vez por página activa)
+POST {{FondoService_HostAddress}}/api/background
+Content-Type: application/json
+
+{
+  "page": "carrito",
+  "type": "color",
+  "primaryColor": "#FFFFFF",
+  "isActive": true
+}
+
+### POST gradient
+POST {{FondoService_HostAddress}}/api/background
+Content-Type: application/json
+
+{
+  "page": "checkout",
+  "type": "gradient",
+  "primaryColor": "#0F172A",
+  "secondaryColor": "#1E293B",
+  "isActive": true
+}
+
+### POST image
+POST {{FondoService_HostAddress}}/api/background
+Content-Type: application/json
+
+{
+  "page": "ofertas",
+  "type": "image",
+  "imageUrl": "https://placehold.co/1600x900/png",
+  "isActive": true
+}
+
+### PUT reemplazo completo del fondo creado en POST color
+PUT {{FondoService_HostAddress}}/api/background/id/{{BackgroundId}}
+Content-Type: application/json
+
+{
+  "page": "carrito",
+  "type": "color",
+  "primaryColor": "#E2E8F0",
+  "isActive": true
+}
+
+### DELETE del fondo creado en POST color
+DELETE {{FondoService_HostAddress}}/api/background/id/{{BackgroundId}}
+Accept: application/json
+
+### OpenAPI (solo Development)
+GET {{FondoService_HostAddress}}/openapi/v1.json
+Accept: application/json

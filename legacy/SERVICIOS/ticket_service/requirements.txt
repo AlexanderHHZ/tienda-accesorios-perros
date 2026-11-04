@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic
+psycopg2-binary
+sqlalchemy
+xhtml2pdf
+jinja2
+python-dotenv

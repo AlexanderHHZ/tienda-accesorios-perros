@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Compras - Librería</title>
+    <style>
+        :root {
+            --color-fondo: #fcfbfa;         
+            --color-tarjeta: #ffffff;        
+            --texto-principal: #4a3b32;     
+            --texto-secundario: #8c7a6b;     
+            --color-verde: #a3b899;         
+            --color-naranja: #d99b6c;       
+            --color-marron: #a66e4e;        
+            --color-rosa: #f2c4bc;        
+            --color-proceso: #f4d0a9;      
+            --color-borde: #f0eae1;       
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--texto-principal);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 750px;
+            background: var(--color-tarjeta);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(166, 110, 78, 0.06);
+            border: 1px solid var(--color-borde);
+        }
+
+        .header-user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--color-borde);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--texto-principal);
+            font-size: 1.6rem;
+            margin: 0;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .user-badge {
+            background-color: var(--color-rosa);
+            color: #593933;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .card-compra {
+            background-color: #fffdf9;
+            border: 1px solid var(--color-borde);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-compra:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(166, 110, 78, 0.08);
+        }
+
+        .header-compra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .transaccion-id {
+            font-weight: 600;
+            color: var(--color-marron);
+            font-size: 0.95rem;
+        }
+
+        .estado-entregado {
+            background-color: var(--color-verde);
+            color: #2b3b26;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .estado-proceso {
+            background-color: var(--color-proceso);
+            color: #593922;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .fecha {
+            color: var(--texto-secundario);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .productos-lista {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+            border-top: 1px dashed var(--color-borde);
+            border-bottom: 1px dashed var(--color-borde);
+            padding: 12px 0;
+        }
+
+        .producto-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.95rem;
+            color: var(--texto-principal);
+        }
+
+        .producto-info span {
+            display: block;
+        }
+
+        .producto-autor {
+            font-size: 0.82rem;
+            color: var(--texto-secundario);
+            margin-top: 2px;
+        }
+
+        .producto-precio {
+            font-weight: 600;
+            color: var(--color-naranja);
+        }
+
+        .footer-compra {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 10px;
+        }
+
+        .total-label {
+            color: var(--texto-secundario);
+            font-size: 0.9rem;
+        }
+
+        .total-monto {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--texto-principal);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-user">
+            <h1>Historial de Compras</h1>
+            <span class="user-badge">Usuario: Aranzazu</span>
+        </div>
+
+    
+        <div class="card-compra">
+            <div class="header-compra">
+                <span class="transaccion-id">Pedido #LIB-0001</span>
+                <span class="estado-entregado">Entregado</span>
+            </div>
+            <div class="fecha">
+                📅 26 de Septiembre de 2026 — 16:45 hrs
+            </div>
+            
+            <ul class="productos-lista">
+                <li class="producto-item">
+                    <div class="producto-info">
+                        <strong>Heartless</strong>
+                        <span class="producto-autor">Autor: Marissa Mayers (1 unidad)</span>
+                    </div>
+                    <span class="producto-precio">$450.50 MXN</span>
+                </li>
+            </ul>
+
+            <div class="footer-compra">
+                <span class="total-label">Total pagado</span>
+                <span class="total-monto">$450.50 MXN</span>
+            </div>
+        </div>
+
+
+        <div class="card-compra">
+            <div class="header-compra">
+                <span class="transaccion-id">Pedido #LIB-0002</span>
+                <span class="estado-entregado">Entregado</span>
+            </div>
+            <div class="fecha">
+                📅 24 de Septiembre de 2026 — 11:20 hrs
+            </div>
+            
+            <ul class="productos-lista">
+                <li class="producto-item">
+                    <div class="producto-info">
+                        <strong>Harry Potter y la Piedra Filosofal</strong>
+                        <span class="producto-autor">Autor: J.K. Rowling (1 unidad)</span>
+                    </div>
+                    <span class="producto-precio">$380.00 MXN</span>
+                </li>
+            </ul>
+
+            <div class="footer-compra">
+                <span class="total-label">Total pagado</span>
+                <span class="total-monto">$380.00 MXN</span>
+            </div>
+        </div>
+
+
+        <div class="card-compra">
+            <div class="header-compra">
+                <span class="transaccion-id">Pedido #LIB-0003</span>
+                <span class="estado-proceso">En proceso</span>
+            </div>
+            <div class="fecha">
+                ⏳ 26 de Septiembre de 2026 — 18:00 hrs
+            </div>
+            
+            <ul class="productos-lista">
+                <li class="producto-item">
+                    <div class="producto-info">
+                        <strong>La Odisea</strong>
+                        <span class="producto-autor">Autor: Homero (1 unidad)</span>
+                    </div>
+                    <span class="producto-precio">$299.00 MXN</span>
+                </li>
+            </ul>
+
+            <div class="footer-compra">
+                <span class="total-label">Total del pedido</span>
+                <span class="total-monto">$299.00 MXN</span>
+            </div>
+        </div>
+
+
+        <div class="card-compra">
+            <div class="header-compra">
+                <span class="transaccion-id">Pedido #LIB-0004</span>
+                <span class="estado-entregado">Entregado</span>
+            </div>
+            <div class="fecha">
+                📅 18 de Septiembre de 2026 — 14:10 hrs
+            </div>
+            
+            <ul class="productos-lista">
+                <li class="producto-item">
+                    <div class="producto-info">
+                        <strong>Circe</strong>
+                        <span class="producto-autor">Autor: Madeline Miller (1 unidad)</span>
+                    </div>
+                    <span class="producto-precio">$420.00 MXN</span>
+                </li>
+            </ul>
+
+            <div class="footer-compra">
+                <span class="total-label">Total pagado</span>
+                <span class="total-monto">$420.00 MXN</span>
+            </div>
+        </div>
+
+
+        <div class="card-compra">
+            <div class="header-compra">
+                <span class="transaccion-id">Pedido #LIB-0005</span>
+                <span class="estado-entregado">Entregado</span>
+            </div>
+            <div class="fecha">
+                📅 10 de Septiembre de 2026 — 09:30 hrs
+            </div>
+            
+            <ul class="productos-lista">
+                <li class="producto-item">
+                    <div class="producto-info">
+                        <strong>La canción de Aquiles</strong>
+                        <span class="producto-autor">Autor: Madeline Miller (1 unidad)</span>
+                    </div>
+                    <span class="producto-precio">$399.00 MXN</span>
+                </li>
+            </ul>
+
+            <div class="footer-compra">
+                <span class="total-label">Total pagado</span>
+                <span class="total-monto">$399.00 MXN</span>
+            </div>
+        </div>
+
+
+        <div class="card-compra">
+            <div class="header-compra">
+                <span class="transaccion-id">Pedido #LIB-0006</span>
+                <span class="estado-proceso">En proceso</span>
+            </div>
+            <div class="fecha">
+                ⏳ 26 de Septiembre de 2026 — 20:15 hrs
+            </div>
+            
+            <ul class="productos-lista">
+                <li class="producto-item">
+                    <div class="producto-info">
+                        <strong>Alas de sangre (Fourth Wing)</strong>
+                        <span class="producto-autor">Autor: Rebecca Yarros (1 unidad)</span>
+                    </div>
+                    <span class="producto-precio">$520.00 MXN</span>
+                </li>
+            </ul>
+
+            <div class="footer-compra">
+                <span class="total-label">Total del pedido</span>
+                <span class="total-monto">$520.00 MXN</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+import {db} from '../../../shared/core.mjs';
+export const store=db('auth',`CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY, nombreUsuario TEXT UNIQUE NOT NULL, email TEXT UNIQUE NOT NULL, nombreCompleto TEXT, passwordHash TEXT NOT NULL, rol TEXT NOT NULL, activo INTEGER DEFAULT 1, ultimoAcceso TEXT, intentos INTEGER DEFAULT 0, bloqueadoHasta TEXT);`);
+export async function buscarUsuarioPorNombre(name){return store.prepare('SELECT * FROM users WHERE nombreUsuario=?').get(name);}
+export async function crearUsuario(u){try{store.prepare('INSERT INTO users(nombreUsuario,email,nombreCompleto,passwordHash,rol) VALUES(?,?,?,?,?)').run(u.nombreUsuario,u.email,u.nombreCompleto,u.passwordHash,u.rol);}catch(e){if(String(e.message).includes('UNIQUE'))e.code='ER_DUP_ENTRY';throw e;}}
+export async function registrarAcceso(id){store.prepare('UPDATE users SET ultimoAcceso=?, intentos=0, bloqueadoHasta=NULL WHERE id=?').run(new Date().toISOString(),id);}
+export async function registrarIntentoFallido(id,max,minutes){const u=store.prepare('SELECT * FROM users WHERE id=?').get(id);const n=u.bloqueadoHasta&&new Date(u.bloqueadoHasta)<new Date()?1:u.intentos+1;store.prepare('UPDATE users SET intentos=?, bloqueadoHasta=? WHERE id=?').run(n,n>=max?new Date(Date.now()+minutes*60000).toISOString():null,id);}

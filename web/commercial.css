@@ -1,0 +1,52 @@
+/* Commercial interface: readable typography and restrained working surfaces. */
+:root{--ink:#292e35;--muted:#525a64;--line:#dce0e4;--green:#b74b23}
+body{font-size:16px;line-height:1.6;color:var(--ink)}
+.announcement{background:#f4e7d8;color:#493a2e;font-size:15px;font-weight:500;letter-spacing:0;border-bottom:1px solid #e7d6c4;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.announcement span{color:#493a2e;font-weight:600}
+tienda-header{--th-text:#292e35;--th-muted:#525a64;--th-accent:#b74b23;--th-font:'Segoe UI',Arial,sans-serif}
+.brand-logo small{font-size:14px;letter-spacing:1px;color:#525a64}
+#mi-menu .opciones-menu a{font-size:15px!important;color:#454c55!important;font-weight:600}
+h1,h2,h3{letter-spacing:-.025em}h2{line-height:1.25}
+.hero .eyebrow,.eyebrow{font-size:15px;letter-spacing:.035em;color:#8e411f}
+.hero-copy p{font-size:16px;color:#484a4f}.hero-label{font-size:16px;color:#3e3630}
+.benefits,.category-story a{font-size:15px;color:#454c55}.benefits{flex-wrap:wrap;line-height:1.6}
+.filters input,.filters select,input,select,textarea{font-size:16px;color:#292e35}
+.filters{flex-wrap:wrap}.filters input{min-width:180px}.filters select{min-width:160px}
+label{font-size:15px;font-weight:600;letter-spacing:0;color:#3e454e}
+button,.button{font-size:16px;font-weight:600;min-height:44px;background:#b74b23}
+button:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.secondary{background:#f1f3f5;color:#343c47;border:1px solid #d6dbe1}
+.product h3{font-size:18px;line-height:1.4}.product p{font-size:15px;color:#525a64}
+.product .tag{font-size:14px;color:#3e454e;font-weight:600}
+.product-bottom{flex-wrap:wrap}.product-bottom strong{font-size:20px}.product-bottom button{font-size:15px;min-height:44px;color:#913b1c;background:#fff0e6}
+.product-bottom button:hover{background:#b74b23;color:#fff}
+.product img{object-fit:contain}.muted,small,.auth small,.auth .tabs a,.breadcrumb,.line,.notice,.badge,.checkout-progress,#results,.drawer-summary>a,.drawer-item strong,.receipt-modal table th,.receipt-modal table td,.review strong,#toast{font-size:15px}
+.muted,.breadcrumb,#results,.auth small,.auth .tabs a{color:#525a64}
+.notice{color:#534333;background:#f6efe5}.error{color:#97321c;background:#fff0eb}
+.badge{color:#334b69;background:#edf1f6}.checkout-progress{color:#504238;background:#f6eee3}
+.line{line-height:1.6}.line h3,.drawer-item h3{font-size:17px}.total{font-size:24px}
+.auth .tabs a{font-weight:600}.section-head>p{font-size:15px;color:#525a64;max-width:none;text-align:left}
+.admin-page{--ink:#252c35;--muted:#535c68;--line:#d9dfe5;background:#f5f6f8;border-radius:16px;margin-top:24px;color:#252c35}
+.admin-page h1{font-size:36px}.admin-page h2{font-size:24px}.admin-page .eyebrow{color:#535c68;letter-spacing:.04em}
+.admin-page .panel{box-shadow:none;border-color:#d9dfe5;border-radius:10px}
+.admin-nav{background:#e9edf1;border-color:#d9dfe5;gap:8px}.admin-nav a{font-size:15px;color:#3e4855;font-weight:600}
+.admin-nav a[aria-current]{color:#202b39;background:#fff;box-shadow:0 1px 4px #24314a14}
+.admin-page button,.admin-page .create-product{background:#34465b;color:white}
+.admin-page .secondary,.admin-table button{background:#f1f3f6;color:#303e50;border:1px solid #cbd3dd;font-size:15px;min-height:44px}
+.admin-table-wrap{box-shadow:none;border-color:#d9dfe5;border-radius:10px}
+.admin-table th{font-size:15px;letter-spacing:0;text-transform:none;background:#edf0f3;color:#404b59;font-weight:600}
+.admin-table td{font-size:15px;color:#424c58;vertical-align:middle}.admin-table td:first-child{color:#252c35}
+.admin-table tr:hover td{background:#f7f9fb}.admin-product-cell{display:flex;align-items:center;gap:14px;min-width:220px}
+.admin-thumbnail{display:block;width:56px;height:56px;flex:0 0 56px;object-fit:contain;background:#f5f6f7;border:1px solid #e1e5e9;border-radius:8px;padding:4px}.admin-thumbnail[hidden]{display:none}
+.editor-modal .panel{box-shadow:none}.admin-page input:focus,.admin-page select:focus,.admin-page textarea:focus{outline-color:#cad8e8;border-color:#526c8b}
+app-footer a{display:block;color:#433b34;font-size:16px;margin:0 0 10px;line-height:1.5}app-footer p{font-size:16px;color:#433b34}app-footer a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:3px solid #8f512c;outline-offset:4px}
+.icon-close{font-size:26px;background:#eef0f2;color:#384553;min-width:44px;min-height:44px}
+@media(max-width:650px){.announcement{padding:12px 20px;font-size:15px}.announcement span{display:block}.hero-copy p{font-size:16px}.hero .eyebrow{font-size:15px}.hero-label{font-size:15px}.category-story a{font-size:15px;padding:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product h3{font-size:16px}.product p{font-size:15px}.product-bottom button{font-size:15px;width:100%;justify-content:center}.product-bottom strong{font-size:19px}.benefits{font-size:15px}.filters input,.filters select{width:100%}.admin-page{border-radius:0;margin-top:0}.admin-nav a{font-size:15px;padding:12px}.admin-table td,.admin-table th{padding:14px}.admin-page h1{font-size:30px}.drawer-item{grid-template-columns:56px 1fr}.drawer-item img{width:56px;height:65px}.drawer-item>strong{grid-column:2}.brand-logo small{display:inline}.section-head{flex-wrap:wrap;gap:16px}}
+@media(max-width:360px){.grid{grid-template-columns:1fr}}
+@media print{.receipt-modal{color:#000}.receipt-modal small,.receipt-modal p,.receipt-modal table th,.receipt-modal table td{font-size:12pt}.receipt-modal .muted{color:#333}}
+
+/* Tipografía local: español de México */
+@font-face{font-family:Roboto;src:url(/assets/fonts/roboto-400.woff2) format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:Roboto;src:url(/assets/fonts/roboto-500.woff2) format("woff2");font-style:normal;font-weight:500;font-display:swap}
+@font-face{font-family:Roboto;src:url(/assets/fonts/roboto-700.woff2) format("woff2");font-style:normal;font-weight:700;font-display:swap}
+html,body{font-family:Roboto,Arial,sans-serif}body{font-size:16px;line-height:1.6}h1,h2,h3,h4,.admin-page h1,button,input,select,textarea,.button,#mi-menu .menu{font-family:Roboto,Arial,sans-serif!important}h1,h2,h3{font-weight:700;letter-spacing:-.025em}button,.button,label{font-weight:500}tienda-header{--th-font:Roboto,Arial,sans-serif}.hero h1{font-size:clamp(42px,5vw,66px);line-height:1.08}.hero .eyebrow{letter-spacing:.06em}.hero-copy p{max-width:430px}.benefits{align-items:center}.benefits>span{flex:1;min-width:200px}@media(max-width:600px){.hero h1{font-size:42px}.benefits{display:grid;gap:12px}.hero-label{max-width:calc(100% - 30px)}}

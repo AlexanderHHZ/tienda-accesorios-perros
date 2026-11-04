@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Define la codificación de caracteres. -->
+    <meta charset="UTF-8">
+
+    <!-- Permite que el contenido se adapte a diferentes dispositivos. -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <!-- Título de la página de ejemplo. -->
+    <title>Ejemplo - Biblioteca de Menú</title>
+
+
+    <!-- =================================================
+         CARGAR ESTILOS DE LA BIBLIOTECA
+         ================================================= -->
+
+    <!-- Carga los estilos necesarios para mostrar el menú. -->
+    <link
+        rel="stylesheet"
+        href="../menu.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         CONTENEDOR DEL MENÚ
+         ================================================= -->
+
+    <!-- La biblioteca insertará el menú dentro de este elemento. -->
+    <div id="mi-menu"></div>
+
+
+    <!-- =================================================
+         CARGAR JAVASCRIPT DE LA BIBLIOTECA
+         ================================================= -->
+
+    <!-- Carga la función crearMenu(). -->
+    <script src="../menu.js"></script>
+
+
+    <!-- =================================================
+         CONFIGURACIÓN DEL CONSUMIDOR
+         ================================================= -->
+
+    <script>
+
+        // Crea el menú utilizando la configuración
+        // proporcionada por el consumidor.
+        crearMenu({
+
+            // -------------------------------------------------
+            // IDENTIDAD DE LA TIENDA
+            // -------------------------------------------------
+
+            // Nombre que aparecerá en la barra.
+            nombre: "Mi tienda",
+
+            // URL del logo de la tienda.
+            logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlDpFK8PVN9Dpfhsg6x8eBxKZVzTbeAO-8-K5fYmQ8IA&s=10",
+
+            // Altura de la barra del menú.
+            alturaMenu: 70,
+
+            // Tamaño del logo.
+            tamanoLogo: 40,
+
+            // Tamaño del nombre de la tienda.
+            tamanoNombre: 20,
+
+
+            // -------------------------------------------------
+            // TIPOGRAFÍA
+            // -------------------------------------------------
+
+            // true utiliza una misma fuente para todo el menú.
+            fuenteUnica: true,
+
+            // Fuente utilizada cuando fuenteUnica está activa.
+            fuente: "Arial, sans-serif",
+
+            // -------------------------------------------------
+            // COLORES
+            // -------------------------------------------------
+
+            // Color de fondo de la barra.
+            colorFondo: "#006633",
+
+            // Color principal del texto.
+            colorTexto: "#FFFFFF",
+
+            // Color utilizado al pasar el cursor.
+            colorHover: "#FF6600",
+
+
+            // -------------------------------------------------
+            // OPCIONES DEL MENÚ
+            // -------------------------------------------------
+
+            opciones: [
+
+                {
+                    nombre: "Inicio",
+                    ruta: "/"
+                },
+
+                {
+                    nombre: "Productos",
+                    ruta: "/productos"
+                },
+
+                {
+                    nombre: "Ofertas",
+                    ruta: "/ofertas"
+                },
+
+                {
+                    nombre: "Contacto",
+                    ruta: "/contacto"
+                }
+
+            ],
+
+
+            // -------------------------------------------------
+            // CONFIGURACIÓN DEL BUSCADOR
+            // -------------------------------------------------
+
+            // Permite mostrar u ocultar el buscador.
+            mostrarBusqueda: true,
+
+            // Posición disponible:
+            // "izquierda", "centro" o "derecha".
+            posicionBusqueda: "derecha",
+
+            // Texto mostrado dentro del campo.
+            textoBusqueda: "Buscar...",
+
+            // Ancho del campo de búsqueda.
+            anchoBusqueda: 180
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

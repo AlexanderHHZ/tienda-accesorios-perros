@@ -1,0 +1,1319 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Empaquetado Service API",
+    "version": "1.0.0",
+    "description": "API REST independiente. Peso en kg y medidas en cm. Respuestas JSON; DELETE devuelve 204. Sin autenticación en este alcance."
+  },
+  "components": {
+    "schemas": {
+      "MedidasInput": {
+        "type": "object",
+        "properties": {
+          "largo": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Largo en centímetros."
+          },
+          "ancho": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Ancho en centímetros."
+          },
+          "alto": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Alto en centímetros."
+          }
+        },
+        "required": [
+          "largo",
+          "ancho",
+          "alto"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "largo": 40,
+          "ancho": 30,
+          "alto": 20
+        }
+      },
+      "CrearEmpaquetadoInput": {
+        "type": "object",
+        "properties": {
+          "peso": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Peso en kilogramos."
+          },
+          "tamano": {
+            "type": "string",
+            "enum": [
+              "chico",
+              "mediano",
+              "grande"
+            ]
+          },
+          "medidas": {
+            "$ref": "#/components/schemas/MedidasInput"
+          },
+          "tipoEmpacado": {
+            "type": "string",
+            "enum": [
+              "caja",
+              "bolsa"
+            ]
+          }
+        },
+        "required": [
+          "peso",
+          "tamano",
+          "medidas",
+          "tipoEmpacado"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "peso": 4.5,
+          "tamano": "mediano",
+          "medidas": {
+            "largo": 40,
+            "ancho": 30,
+            "alto": 20
+          },
+          "tipoEmpacado": "caja"
+        }
+      },
+      "ActualizarEmpaquetadoInput": {
+        "type": "object",
+        "properties": {
+          "peso": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000
+          },
+          "tamano": {
+            "type": "string",
+            "enum": [
+              "chico",
+              "mediano",
+              "grande"
+            ]
+          },
+          "medidas": {
+            "type": "object",
+            "properties": {
+              "largo": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true,
+                "maximum": 1000000000,
+                "description": "Largo en centímetros."
+              },
+              "ancho": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true,
+                "maximum": 1000000000,
+                "description": "Ancho en centímetros."
+              },
+              "alto": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true,
+                "maximum": 1000000000,
+                "description": "Alto en centímetros."
+              }
+            },
+            "additionalProperties": false,
+            "minProperties": 1
+          },
+          "tipoEmpacado": {
+            "type": "string",
+            "enum": [
+              "caja",
+              "bolsa"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "minProperties": 1,
+        "example": {
+          "peso": 5,
+          "medidas": {
+            "alto": 22
+          }
+        }
+      },
+      "EmpaquetadoInput": {
+        "type": "object",
+        "properties": {
+          "peso": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Peso en kilogramos."
+          },
+          "tamano": {
+            "type": "string",
+            "enum": [
+              "chico",
+              "mediano",
+              "grande"
+            ]
+          },
+          "medidas": {
+            "$ref": "#/components/schemas/MedidasInput"
+          },
+          "tipoEmpacado": {
+            "type": "string",
+            "enum": [
+              "caja",
+              "bolsa"
+            ]
+          },
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 9007199254740991
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          }
+        },
+        "required": [
+          "peso",
+          "tamano",
+          "medidas",
+          "tipoEmpacado",
+          "id",
+          "createdAt",
+          "updatedAt"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "id": 1,
+          "peso": 4.5,
+          "tamano": "mediano",
+          "medidas": {
+            "largo": 40,
+            "ancho": 30,
+            "alto": 20
+          },
+          "tipoEmpacado": "caja",
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "updatedAt": "2026-10-06T00:00:00.000Z"
+        }
+      },
+      "ErrorInput": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "enum": [
+              false
+            ]
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "requestId": {
+                "type": "string"
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "message"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "code",
+              "message",
+              "requestId"
+            ]
+          }
+        },
+        "required": [
+          "success",
+          "error"
+        ],
+        "example": {
+          "success": false,
+          "error": {
+            "code": "NOT_FOUND",
+            "message": "No se encontró el empaquetado.",
+            "requestId": "req-1"
+          }
+        }
+      },
+      "Medidas": {
+        "type": "object",
+        "properties": {
+          "largo": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Largo en centímetros."
+          },
+          "ancho": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Ancho en centímetros."
+          },
+          "alto": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Alto en centímetros."
+          }
+        },
+        "required": [
+          "largo",
+          "ancho",
+          "alto"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "largo": 40,
+          "ancho": 30,
+          "alto": 20
+        }
+      },
+      "CrearEmpaquetado": {
+        "type": "object",
+        "properties": {
+          "peso": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Peso en kilogramos."
+          },
+          "tamano": {
+            "type": "string",
+            "enum": [
+              "chico",
+              "mediano",
+              "grande"
+            ]
+          },
+          "medidas": {
+            "$ref": "#/components/schemas/Medidas"
+          },
+          "tipoEmpacado": {
+            "type": "string",
+            "enum": [
+              "caja",
+              "bolsa"
+            ]
+          }
+        },
+        "required": [
+          "peso",
+          "tamano",
+          "medidas",
+          "tipoEmpacado"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "peso": 4.5,
+          "tamano": "mediano",
+          "medidas": {
+            "largo": 40,
+            "ancho": 30,
+            "alto": 20
+          },
+          "tipoEmpacado": "caja"
+        }
+      },
+      "ActualizarEmpaquetado": {
+        "type": "object",
+        "properties": {
+          "peso": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000
+          },
+          "tamano": {
+            "type": "string",
+            "enum": [
+              "chico",
+              "mediano",
+              "grande"
+            ]
+          },
+          "medidas": {
+            "type": "object",
+            "properties": {
+              "largo": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true,
+                "maximum": 1000000000,
+                "description": "Largo en centímetros."
+              },
+              "ancho": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true,
+                "maximum": 1000000000,
+                "description": "Ancho en centímetros."
+              },
+              "alto": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMinimum": true,
+                "maximum": 1000000000,
+                "description": "Alto en centímetros."
+              }
+            },
+            "additionalProperties": false,
+            "minProperties": 1
+          },
+          "tipoEmpacado": {
+            "type": "string",
+            "enum": [
+              "caja",
+              "bolsa"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "minProperties": 1,
+        "example": {
+          "peso": 5,
+          "medidas": {
+            "alto": 22
+          }
+        }
+      },
+      "Empaquetado": {
+        "type": "object",
+        "properties": {
+          "peso": {
+            "type": "number",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 1000000000,
+            "description": "Peso en kilogramos."
+          },
+          "tamano": {
+            "type": "string",
+            "enum": [
+              "chico",
+              "mediano",
+              "grande"
+            ]
+          },
+          "medidas": {
+            "$ref": "#/components/schemas/Medidas"
+          },
+          "tipoEmpacado": {
+            "type": "string",
+            "enum": [
+              "caja",
+              "bolsa"
+            ]
+          },
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "exclusiveMinimum": true,
+            "maximum": 9007199254740991
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+          }
+        },
+        "required": [
+          "peso",
+          "tamano",
+          "medidas",
+          "tipoEmpacado",
+          "id",
+          "createdAt",
+          "updatedAt"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "id": 1,
+          "peso": 4.5,
+          "tamano": "mediano",
+          "medidas": {
+            "largo": 40,
+            "ancho": 30,
+            "alto": 20
+          },
+          "tipoEmpacado": "caja",
+          "createdAt": "2026-10-06T00:00:00.000Z",
+          "updatedAt": "2026-10-06T00:00:00.000Z"
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "enum": [
+              false
+            ]
+          },
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "requestId": {
+                "type": "string"
+              },
+              "details": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "message"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            "required": [
+              "code",
+              "message",
+              "requestId"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "success",
+          "error"
+        ],
+        "additionalProperties": false,
+        "example": {
+          "success": false,
+          "error": {
+            "code": "NOT_FOUND",
+            "message": "No se encontró el empaquetado.",
+            "requestId": "req-1"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "health",
+        "summary": "Comprobar API y base de datos",
+        "tags": [
+          "Sistema"
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "ok"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "status"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "data"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/empaquetados": {
+      "post": {
+        "operationId": "crearEmpaquetado",
+        "summary": "Crear un empaquetado",
+        "tags": [
+          "Empaquetados"
+        ],
+        "description": "Persiste un registro. Peso en kg, dimensiones en cm. No se aceptan campos desconocidos.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearEmpaquetadoInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Empaquetado"
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "data"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "operationId": "listarEmpaquetados",
+        "summary": "Listar, buscar y filtrar empaquetados",
+        "tags": [
+          "Empaquetados"
+        ],
+        "description": "Paginación desde 1. Máximo 100 registros por página. Los totales corresponden a todos los resultados filtrados, no solo a la página.",
+        "parameters": [
+          {
+            "schema": {
+              "default": "",
+              "type": "string",
+              "maxLength": 80
+            },
+            "in": "query",
+            "name": "q",
+            "required": false,
+            "description": "ID (1 o EMP-0001), tamaño o tipo. Coincidencia parcial para texto."
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "chico",
+                "mediano",
+                "grande"
+              ]
+            },
+            "in": "query",
+            "name": "tamano",
+            "required": false
+          },
+          {
+            "schema": {
+              "type": "string",
+              "enum": [
+                "caja",
+                "bolsa"
+              ]
+            },
+            "in": "query",
+            "name": "tipoEmpacado",
+            "required": false
+          },
+          {
+            "schema": {
+              "default": 1,
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 1000000
+            },
+            "in": "query",
+            "name": "page",
+            "required": false
+          },
+          {
+            "schema": {
+              "default": 10,
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "in": "query",
+            "name": "limit",
+            "required": false
+          },
+          {
+            "schema": {
+              "default": "createdAt",
+              "type": "string",
+              "enum": [
+                "createdAt",
+                "peso",
+                "id"
+              ]
+            },
+            "in": "query",
+            "name": "sortBy",
+            "required": false
+          },
+          {
+            "schema": {
+              "default": "desc",
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ]
+            },
+            "in": "query",
+            "name": "order",
+            "required": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Empaquetado"
+                      }
+                    },
+                    "meta": {
+                      "type": "object",
+                      "properties": {
+                        "total": {
+                          "type": "integer",
+                          "minimum": -9007199254740991,
+                          "maximum": 9007199254740991
+                        },
+                        "page": {
+                          "type": "integer",
+                          "minimum": -9007199254740991,
+                          "maximum": 9007199254740991
+                        },
+                        "limit": {
+                          "type": "integer",
+                          "minimum": -9007199254740991,
+                          "maximum": 9007199254740991
+                        },
+                        "totalPages": {
+                          "type": "integer",
+                          "minimum": -9007199254740991,
+                          "maximum": 9007199254740991
+                        },
+                        "summary": {
+                          "type": "object",
+                          "properties": {
+                            "cajas": {
+                              "type": "integer",
+                              "minimum": -9007199254740991,
+                              "maximum": 9007199254740991
+                            },
+                            "bolsas": {
+                              "type": "integer",
+                              "minimum": -9007199254740991,
+                              "maximum": 9007199254740991
+                            },
+                            "pesoTotal": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "cajas",
+                            "bolsas",
+                            "pesoTotal"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": [
+                        "total",
+                        "page",
+                        "limit",
+                        "totalPages",
+                        "summary"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "data",
+                    "meta"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/empaquetados/{id}": {
+      "get": {
+        "operationId": "obtenerEmpaquetado",
+        "summary": "Obtener un empaquetado por ID",
+        "tags": [
+          "Empaquetados"
+        ],
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Empaquetado"
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "data"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "operationId": "actualizarEmpaquetado",
+        "summary": "Actualizar parcialmente un empaquetado",
+        "tags": [
+          "Empaquetados"
+        ],
+        "description": "Permite actualizar una sola dimensión. Se rechazan {} y medidas vacías. El encabezado X-Expected-Updated-At evita sobrescribir cambios de otro cliente.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActualizarEmpaquetadoInput"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          },
+          {
+            "schema": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+            },
+            "in": "header",
+            "name": "x-expected-updated-at",
+            "required": false,
+            "description": "updatedAt leído previamente. Si cambió, se responde 409."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "enum": [
+                        true
+                      ]
+                    },
+                    "data": {
+                      "$ref": "#/components/schemas/Empaquetado"
+                    }
+                  },
+                  "required": [
+                    "success",
+                    "data"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "eliminarEmpaquetado",
+        "summary": "Eliminar un empaquetado",
+        "tags": [
+          "Empaquetados"
+        ],
+        "description": "Eliminación permanente. Responde 204 sin cuerpo. Admite protección opcional contra cambios simultáneos.",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "pattern": "^[1-9]\\d*$"
+            },
+            "in": "path",
+            "name": "id",
+            "required": true
+          },
+          {
+            "schema": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z))$"
+            },
+            "in": "header",
+            "name": "x-expected-updated-at",
+            "required": false,
+            "description": "updatedAt leído previamente. Si cambió, se responde 409."
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Eliminado, sin contenido."
+          },
+          "400": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Default Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Empaquetados",
+      "description": "Registro y administración de empaquetados."
+    },
+    {
+      "name": "Sistema",
+      "description": "Disponibilidad de la API."
+    }
+  ]
+}

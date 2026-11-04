@@ -1,0 +1,2572 @@
+{
+  "source": "SERVICIOS.zip",
+  "source_sha256": "7f4ab290558f907c0585fd685cdb3b221f5451173ced8e67cb9b31da3fb3fbb9",
+  "preserved": [
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/AlertaStockMinimo.csproj",
+      "sha256": "e4e1e1b244356d16cc825b9bf3a84a86dbf41a8133486af83c38dc8af22f041f",
+      "bytes": 307
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/FormPrincipal.Designer.cs",
+      "sha256": "5225930eb3f94b280543d3fed64b3f34a5d63f0b750657c807442e498e057c10",
+      "bytes": 6793
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/FormPrincipal.cs",
+      "sha256": "d6293384fe1b5b363fa3bcc93c880f86802abbd43125ed13325b72a62b8ce0f8",
+      "bytes": 2354
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/FormPrincipal.resx",
+      "sha256": "a122f3e718c7a26b3b21f292ae61305dc66838bb76b93ed6a7669b2ab4ca3432",
+      "bytes": 5748
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/Models/AlertaStock.cs",
+      "sha256": "9d7c80efa9c42b65b1197fc5cca057b289e9f9378e1133151e438677c0e11a45",
+      "bytes": 493
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/Models/Producto.cs",
+      "sha256": "a9bbacf92f4cf06dfdbf4fdedace1a1e22370920ac019143dd22999c86c33425",
+      "bytes": 372
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/Program.cs",
+      "sha256": "f736a15619b454e795dff4f5e4bd8b5f4473d20b6ffc1410ccbd1aba2cd15642",
+      "bytes": 522
+    },
+    {
+      "path": "AlertaStockMinimo/AlertaStockMinimo/Services/AlertaStockService.cs",
+      "sha256": "b1e86d0d24a66012c42e5c19d10b47aa44320d4d6036eda3c64423324613548e",
+      "bytes": 1167
+    },
+    {
+      "path": "CRUD INVENTARIO/Documentacion Modulo Inventario (1).pdf",
+      "sha256": "68958657a02f15090ce6211fcc7e4c339a879d5b3c76c350b0fff07827bd36e2",
+      "bytes": 418713
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/.env.example",
+      "sha256": "cd7f161d5f4d78e87dd45a4aaa0f4903f69533bc92ffceba0cd89e27b0fa7c94",
+      "bytes": 245
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/.gitignore",
+      "sha256": "ffd4c487d529ace1abbf1b138ac2d4e692007d33b5c6e4aff5b43e917fa08786",
+      "bytes": 145
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/README.md",
+      "sha256": "43552c24ed00d04ba8a5c55fbcb1c066293fe40fb6c2dfdfc73a5138990e02c0",
+      "bytes": 11536
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/database/schema.sql",
+      "sha256": "9fd96b6edd1343f5c6bca766ffebcab3c2a41ece35098419b6d2eb3752810577",
+      "bytes": 1574
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/package-lock.json",
+      "sha256": "7a19a061150bd5753fa9f40b44b84596750634d3b2e11ed45fcd2edea67fd6c4",
+      "bytes": 54641
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/package.json",
+      "sha256": "cc81994970232452c487bb3091f825723320d108e37b38e543ef73ae154edf11",
+      "bytes": 453
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/app.js",
+      "sha256": "f0bd2fa3c36e1de66dfcc9170239a0c6db9750e7367ec7e447ca210309ef692f",
+      "bytes": 1302
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/config/database.js",
+      "sha256": "3843408bba4283c8d0e9990b82d06a194560711015dcde4e629a460cb58af4cd",
+      "bytes": 372
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/config/swagger.js",
+      "sha256": "6389b7eea6d9ad28d7ceaac2d29a02c9deaccd56fa592eff7e5272a71d849e2a",
+      "bytes": 3932
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/controllers/producto.controller.js",
+      "sha256": "9bffa496a3b3c85778f9cb2b4d7aa624d353c1d8459e732f22352f66ac40016e",
+      "bytes": 5389
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/middlewares/errorHandler.js",
+      "sha256": "8755e7a26443d6b55983e6fe23de283e3068a664b042cc2404e9fa193d12ee07",
+      "bytes": 787
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/middlewares/validarProducto.js",
+      "sha256": "24246fd95bfa96f30500665a0a3b9ea24e2c083cd2a7ed0f3be7b6e5b9e0e5bb",
+      "bytes": 2993
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/routes/producto.routes.js",
+      "sha256": "6603ae97902f5341e11356d56ec90d81d2c682c58877dcc374e63d376bf19dfd",
+      "bytes": 6139
+    },
+    {
+      "path": "CRUD INVENTARIO/inventario-service-main/src/services/producto.service.js",
+      "sha256": "67de67ff174b147e22f462c3f9f108097eb3f3de3cee4e7e4d52792f6999ee96",
+      "bytes": 2193
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/.gitignore",
+      "sha256": "8c7a17618985b04812fbe33233a2be52a9385c346428185f45f674975633661a",
+      "bytes": 50
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/README.md",
+      "sha256": "3e7d0cc54f7ee2e44f504a349b5ad51e8a4fbda991660692e2ced37aa152336f",
+      "bytes": 18
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/README.md",
+      "sha256": "1444df3aff06144bf98d1a90758874c063e06754e6d3aba8a9948b2952c6d421",
+      "bytes": 1251
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/package-lock.json",
+      "sha256": "110b9ace2639f2e39696b0997dbab5b9fac804e7a2d11f61ddf790ccf12218d9",
+      "bytes": 30395
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/package.json",
+      "sha256": "380560c227f18035550da15d9d6ee356f547842111116a044f3ea12bf74348eb",
+      "bytes": 200
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/public/index.html",
+      "sha256": "b1dd48e9f33282cd2e154e2437a977fae6ea8700ad45d79bfd9ba38e9f1ca2a0",
+      "bytes": 7422
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/schema.sql",
+      "sha256": "3c85a49d2bfc094f239f964d4c640b04e0d35b0bccd364579ad566142017f945",
+      "bytes": 2636
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/seed.sql",
+      "sha256": "f13bdf8d277d51a66ae29a6eb095f2fc8d95908cf51bd2cb6d4cd60a326f22ad",
+      "bytes": 4083
+    },
+    {
+      "path": "DEVOLUCIONES  MATA/files/server.js",
+      "sha256": "ff95c0b60eb198b3f635493d253dfd50259c8ab7ffda189f43e87812f1c28f75",
+      "bytes": 12951
+    },
+    {
+      "path": "Encabezado/README.md",
+      "sha256": "381f74a38eda72246ff2964bcbcdf97a5e2e132dbb26b731ea0caa8af8b5cc1e",
+      "bytes": 6569
+    },
+    {
+      "path": "Encabezado/demo.html",
+      "sha256": "42a752bdb8df3660aac3e3e89ec73c02dbb1932f9d0ff63cf3412f883eef2a7e",
+      "bytes": 4670
+    },
+    {
+      "path": "Encabezado/tienda-header.js",
+      "sha256": "17e251a31eb530337ef0d0b9c6f4767e05c97e018d557bf1cf97f0f78105af7e",
+      "bytes": 18460
+    },
+    {
+      "path": "Inventario/Inventario/.dockerignore",
+      "sha256": "feca6922c06c6a064031cc30458e61a25d2e8933fbfd139998e2af0fe3a1a4f7",
+      "bytes": 58
+    },
+    {
+      "path": "Inventario/Inventario/.env.example",
+      "sha256": "619c6ffd20825713fd62d9838c313a9e8f9b1a2b110df06fa85b869b170c5e69",
+      "bytes": 129
+    },
+    {
+      "path": "Inventario/Inventario/.gitignore",
+      "sha256": "0df4a021d4200922408a457b9c62229b492ca717a44105fc2c8d4b4a57a0c5a0",
+      "bytes": 45
+    },
+    {
+      "path": "Inventario/Inventario/Dockerfile",
+      "sha256": "ef1eb79153511c039430747d69ef9c1485a5463eec9cd573feb7093a2d67f26a",
+      "bytes": 185
+    },
+    {
+      "path": "Inventario/Inventario/README.md",
+      "sha256": "c139643b4cbf0d85da7f183216f609ac1ffe0a3bbb816cd9e7fc0315297d9424",
+      "bytes": 9731
+    },
+    {
+      "path": "Inventario/Inventario/compose.yaml",
+      "sha256": "6092a58d66a51b653214edce5211d7a0d2f6ed0b976ba37dec2658ba75303e1f",
+      "bytes": 1159
+    },
+    {
+      "path": "Inventario/Inventario/package-lock.json",
+      "sha256": "9f5fe91f02b9749f63bdd87260e4329685884c61036c935f87e482e82cd5a3fd",
+      "bytes": 35233
+    },
+    {
+      "path": "Inventario/Inventario/package.json",
+      "sha256": "2e6cea4d282032ddaef6d6c6288da5bb76f5dfe989bf72559781bc210add6146",
+      "bytes": 526
+    },
+    {
+      "path": "Inventario/Inventario/requests.http",
+      "sha256": "6b3e738e4a19a10a9f67cba0a6f616563d8afb46e8e13bd09da0dec32b0e4990",
+      "bytes": 684
+    },
+    {
+      "path": "Inventario/Inventario/sql/01-schema.sql",
+      "sha256": "69c399b4f6a21baa67433bb9b99781d3d4143c7184c6316dbf33c1ea084420e9",
+      "bytes": 803
+    },
+    {
+      "path": "Inventario/Inventario/sql/02-seed.sql",
+      "sha256": "df38c71e7bc3d47e22d37e06da75c98c4ccd2686b06e4855b28756472c0427f5",
+      "bytes": 451
+    },
+    {
+      "path": "Inventario/Inventario/src/app.js",
+      "sha256": "8647b0a79a56248d0a9385fafcf89c9f84c2013a1eb958006dae689fb622853d",
+      "bytes": 1217
+    },
+    {
+      "path": "Inventario/Inventario/src/db.js",
+      "sha256": "c95a8d446bf261172aaac660d1ee52fb615b870de470ed86b80a03b77034f1a6",
+      "bytes": 525
+    },
+    {
+      "path": "Inventario/Inventario/src/repositories/inventory.repository.js",
+      "sha256": "929c3809e3952a954b324c8c379505675b4190a04550b165944c8fdc3f89597a",
+      "bytes": 963
+    },
+    {
+      "path": "Inventario/Inventario/src/routes/report.routes.js",
+      "sha256": "78ac96c2823d1dc71241609fe5c7056762024c6a15a6c4977c96e04d9aaf266b",
+      "bytes": 347
+    },
+    {
+      "path": "Inventario/Inventario/src/server.js",
+      "sha256": "c4f393472821b72e3f3c9bea89bf792a7fc777ebca0c02698c19b1f9d9a95131",
+      "bytes": 828
+    },
+    {
+      "path": "Inventario/Inventario/src/services/report.service.js",
+      "sha256": "e02e75cad08e1346249ac2c76b5a3b77ec9594df61dca24742829f50ab9032b4",
+      "bytes": 2223
+    },
+    {
+      "path": "Inventario/Inventario/test/mysql.integration.js",
+      "sha256": "244e5b2e92255fa4a81a2669ed67798b07374f40d1bccf16a86de0e2d7708669",
+      "bytes": 2783
+    },
+    {
+      "path": "Inventario/Inventario/test/report.test.js",
+      "sha256": "b66305a8a2d8cff64c3d5c5e30c950ea44c12662ff26e81402af95d72ad7205f",
+      "bytes": 3087
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/.gitattributes",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+      "bytes": 66
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/Controllers/OfertasController.cs",
+      "sha256": "5de499b2b85e9adf2f24222c1ab1e89c9c4c486f5d8d56c35307f2b2655b4f6f",
+      "bytes": 1444
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/Models/StockOfertaDto.cs",
+      "sha256": "8b6c3d03317cae74ab6585f9cf5c049664e58d367432c52c9c1247d30a0ee511",
+      "bytes": 518
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/Program.cs",
+      "sha256": "8d20ab6aaad5659e565764b84cdd305fe8b496900504aea746615f3032efcda0",
+      "bytes": 1128
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/Properties/launchSettings.json",
+      "sha256": "e8ab41abb3b9c204607badf5971b49659ec932d123e23a7b0c35322f48c8ce82",
+      "bytes": 1084
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/StockOfertasApi.csproj",
+      "sha256": "ca0275f67bc2be12fa144189feef44bc453762ba73d0fb0064f1d1de096b1f1f",
+      "bytes": 395
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/StockOfertasApi.http",
+      "sha256": "5ad184ab67facffb2d9ff70c4c932ea11a6bba08e2eb147cf5bd3c2cbc64a80d",
+      "bytes": 137
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/appsettings.Development.json",
+      "sha256": "817db0bf2ecca78364c41dbaf7949bf2504cf47a1c3d0d54f3be8178fefc030b",
+      "bytes": 119
+    },
+    {
+      "path": "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/appsettings.json",
+      "sha256": "2d8bb40059df22089b94c025be8baad5a869b72d4d755d199c872f03bfe6f225",
+      "bytes": 142
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/.gitignore",
+      "sha256": "1891943f6d477ae7ae993460363ca47ce5d58da3ddc7839b85b5e3f46b260c24",
+      "bytes": 1065
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Controllers/PedidosController.cs",
+      "sha256": "3ac466104faf7f0495de7e9cf53de1def1e870f4d8bbf851bc54d2561eb8f7c5",
+      "bytes": 2486
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/DTOs/Pedidodto.cs",
+      "sha256": "1b18ef5988ff38fb806828f75daa6b1af67876f7c5fb7b497a36ae4dcb359119",
+      "bytes": 1020
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Data/IPedidosService.cs",
+      "sha256": "76390458a9faa450f432c6ed58e426bd6b1d2684aa4452259178e05c507c0e27",
+      "bytes": 3499
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Models/Pedido.cs",
+      "sha256": "ef4cf1b3ab0dce177c84973172903be9ade920fe9d1cb750e5d499c993805a63",
+      "bytes": 907
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Program.cs",
+      "sha256": "e76e5cd0b71750510d75f6acd0057076e61bd6e071a0708d8dd3cddf764576f0",
+      "bytes": 1044
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Properties/launchSettings.json",
+      "sha256": "b91a7f99f37622521d1c8d7bcf581ef9a3b4180bcf9f793b41afbc57f3709e48",
+      "bytes": 621
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Readme.md",
+      "sha256": "77155de5c22ccda7ee2594207d02cfe90700384557a22a12b68003e34907c83d",
+      "bytes": 13329
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/RegistroPedidosService.csproj",
+      "sha256": "a1aebee0f55ff9810ef2cb980713be12a259373319dbd2ea647a244ec55d25d8",
+      "bytes": 636
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/RegistroPedidosService.http",
+      "sha256": "90a237014f3c26ccee14db8cb9f4b3a08c0183399b98f6f6a98f843b0001fa63",
+      "bytes": 151
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/Services/PedidosDbContexto.cs",
+      "sha256": "71500edd2dd961ef7f9d7edb7f3cf34466098a8db3dd16c49774b0eafe0bd036",
+      "bytes": 731
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/appsettings.Development.json",
+      "sha256": "817db0bf2ecca78364c41dbaf7949bf2504cf47a1c3d0d54f3be8178fefc030b",
+      "bytes": 119
+    },
+    {
+      "path": "RegistroPedidosService-main/RegistroPedidosService-main/appsettings.json",
+      "sha256": "707a2e8ebedde330ae124c6f5db5dea22d71332bf78d4cdf5c83f399a30d40ba",
+      "bytes": 264
+    },
+    {
+      "path": "SOA - Pie de pagina/Proyecto SOA/Instrucciones.txt",
+      "sha256": "e36964460ff0cb3e3c037452b95dd8f9994fba08f8f6d5b7c299386a04816008",
+      "bytes": 5181
+    },
+    {
+      "path": "SOA - Pie de pagina/Proyecto SOA/README.md",
+      "sha256": "e36964460ff0cb3e3c037452b95dd8f9994fba08f8f6d5b7c299386a04816008",
+      "bytes": 5181
+    },
+    {
+      "path": "SOA - Pie de pagina/Proyecto SOA/app-footer.js",
+      "sha256": "5d2e5869f31fb7bbffdac9af7448fc2569578e861ae0e00b4edd02a8b93a290d",
+      "bytes": 6479
+    },
+    {
+      "path": "SOA - Pie de pagina/Proyecto SOA/index.html",
+      "sha256": "a30b4e7fd997bd31a9497ddad52c240b1ac6cb689fe020d020f705da580cf28e",
+      "bytes": 1926
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/.gitignore",
+      "sha256": "7d1b82c7280870b49d661fbfc568fd70277ff948a4a4b247710a7966e05f8b5b",
+      "bytes": 266
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/Controllers/BackgroundController.cs",
+      "sha256": "2dd6443d9ab79b2d2df83c80414d3dfed4f8d2f886ce66ecf76a83c3e05b17ae",
+      "bytes": 3337
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/DTOs/CreateBackgroundRequest.cs",
+      "sha256": "ce6e11d3db3a18c358bc0b9af79dab7716eeabe802a67c24d9d838a39b22f31d",
+      "bytes": 1533
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/DTOs/UpdateBackgroundRequest.cs",
+      "sha256": "85f975fb0dde0bd20fcf1b214bdc229069cf6b72254cd6e7682e2404a75ecdac",
+      "bytes": 155
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/FondoService.csproj",
+      "sha256": "8d25e1d3e30e15271561a49bc1b65bb60d8491d8797dba2a30ab681ff723a0ce",
+      "bytes": 323
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/FondoService.http",
+      "sha256": "184830b7bbfe90a581555b9a77a10201664293016351c9bf8d2c988e8345e4a8",
+      "bytes": 1798
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/Models/BackgroundConfig.cs",
+      "sha256": "855c4e73a604956de388359cbd7c8ac430952b54327ed541220307db28e91faa",
+      "bytes": 446
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/Program.cs",
+      "sha256": "130d4d23b40bea82c42018bda33dc8718c254b479292f3e742d73ecbd4a1a5bf",
+      "bytes": 1388
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/Properties/launchSettings.json",
+      "sha256": "312c0c28a870980560e2b737daf4e9edf59343f42be3fa8ae86e1f0c91756689",
+      "bytes": 621
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/README.md",
+      "sha256": "4e75cc5f081d1c7449b6d42a675b6d66967bbc2470f8e629147ebf125214998f",
+      "bytes": 11024
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/Services/IBackgroundService.cs",
+      "sha256": "9db5c7c91d04ce00a9e8fbed5c739073fb95d5423197ef96b3c330d6f2a8db38",
+      "bytes": 416
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/Services/StoreBackgroundService.cs",
+      "sha256": "dd0521457fddc903e26ded38e5b355c33a36cbbd37b249f0ebf9a4d9e5f64fdf",
+      "bytes": 3797
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/appsettings.Development.json",
+      "sha256": "817db0bf2ecca78364c41dbaf7949bf2504cf47a1c3d0d54f3be8178fefc030b",
+      "bytes": 119
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/appsettings.json",
+      "sha256": "2d8bb40059df22089b94c025be8baad5a869b72d4d755d199c872f03bfe6f225",
+      "bytes": 142
+    },
+    {
+      "path": "Servicio_Fondo/FondoService-main/scripts/Test-Api.ps1",
+      "sha256": "803435b9ee4305a3fdde3a79af804c1a5f7bf094458bda2c3f097d9d62ad8306",
+      "bytes": 13616
+    },
+    {
+      "path": "biblioteca-menu/biblioteca-menu/README.md",
+      "sha256": "bff23d0eea8154effb539596071e4b7b878d44a94b88e2f8f463a85f4a118f2e",
+      "bytes": 13107
+    },
+    {
+      "path": "biblioteca-menu/biblioteca-menu/ejemplo/index.html",
+      "sha256": "4d8d99cf259fc292e7b31294441c9c760ca6634daf0cf687c99da1f2549d0402",
+      "bytes": 4331
+    },
+    {
+      "path": "biblioteca-menu/biblioteca-menu/index.html",
+      "sha256": "db28e6d18c9d56dbaa3b8f041095704d929a77f77870963589e32babf40386e6",
+      "bytes": 282
+    },
+    {
+      "path": "biblioteca-menu/biblioteca-menu/menu.css",
+      "sha256": "4f0b652e700951402dbeedc7f5814a8e82be5658b98573f7df8b0005018150bd",
+      "bytes": 8199
+    },
+    {
+      "path": "biblioteca-menu/biblioteca-menu/menu.js",
+      "sha256": "0fd10cd7a516046d45af66d247e035b50ddc7b9d25653ac78c947368210b87c9",
+      "bytes": 14514
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/.gitignore",
+      "sha256": "de63821e8f2dd763bdc19edfe927dd28dbb1f4eb98e11fd92af67a7f524bee4e",
+      "bytes": 19
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/README.md",
+      "sha256": "2f011e5b1e8135e84678e0b38ec7ac491b34f5020dea438487bcdfd61285e56b",
+      "bytes": 14991
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/package-lock.json",
+      "sha256": "1575e441dffd3752723dc9c55043660f7364be7a667ef8461440fc811477933e",
+      "bytes": 36621
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/package.json",
+      "sha256": "ec86c71b749797dd2313c286cee86aaba35fcee5cf7e84769a7ff4e4e09b4f22",
+      "bytes": 419
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/src/database.js",
+      "sha256": "2b328b93583c21104b6457b1f93e2a3a44bd21d14bfb4b869e91865e393c90bf",
+      "bytes": 306
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/src/routes/resenas.routes.js",
+      "sha256": "d9b91299b90c1c3362cb7765375a270da5deb5fed5c268f00b6d5f74fe134b03",
+      "bytes": 4435
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/src/server.js",
+      "sha256": "3c6747f8c1abc869834bf262ee1a1471274a89128c3f1bdeb05bace8865e15b3",
+      "bytes": 512
+    },
+    {
+      "path": "comentarios-resenas-service/comentarios-resenas-service/src/test-db.js",
+      "sha256": "0541c9725863da843e24ef04a0b410c50e5c68a583eb2e2d29f122d56dc5eaa5",
+      "bytes": 438
+    },
+    {
+      "path": "domicilio/domicilio/index.html",
+      "sha256": "dae6f113a600cb02e882f5fd51faf1901c0bf19464460945fbb877e76cb9e9df",
+      "bytes": 14562
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/.editorconfig",
+      "sha256": "0a3932f26ca804c06de0f0c0d8966c1a052000deedec1a31aa07f9f82b495ec3",
+      "bytes": 146
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/.gitignore",
+      "sha256": "c6a0764baed5a266180a011d0dff6922b04da713a676f704769427d34466f56d",
+      "bytes": 162
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/.nvmrc",
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53",
+      "bytes": 3
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/.prettierignore",
+      "sha256": "ced056c584e8360f5dd7766e80eff4563b8e99c5151f5b6212833801857dd0c3",
+      "bytes": 127
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/.prettierrc.json",
+      "sha256": "a457edcd871673dd80c983cdc064607c8b1b211296f1f5ecca764920cda0c267",
+      "bytes": 90
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/README.md",
+      "sha256": "2cb496f387e0f3cbb4f6fdadcc8c4020f69376f8f788b8d530ef18d0cbc2cba3",
+      "bytes": 19653
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/.env.example",
+      "sha256": "e063bc38378c45a4c7ada20cfe7ef85036a2ef201060882959ff7967503e26e6",
+      "bytes": 284
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/eslint.config.mjs",
+      "sha256": "0587353d152fa5cc47231be66210938e038c0e2118420171a8f42ffe2a11e2e5",
+      "bytes": 283
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/migrations/001_create_empaquetados.sql",
+      "sha256": "9abeb6b11fb5874cb7540de64e1bbc881f98d23020adf029d6f14ce483a8b750",
+      "bytes": 743
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/package.json",
+      "sha256": "d6559fac5bc8e22a2018b55b8cfc46d205ab4aab7c56425f20ae1c64c654715a",
+      "bytes": 1102
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/app.ts",
+      "sha256": "071ca2a4b141db9e06e010aa4443a7b9004ff28bfff89d7b6e3258a25bfe75c5",
+      "bytes": 5482
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/config/env.ts",
+      "sha256": "64b5237b950eacad68d8d73d2d3f99ca180ee1263112038df68879d3926009ef",
+      "bytes": 1705
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/db/database.ts",
+      "sha256": "5c2197af14a4143d576aa6cdf1f1b62d003deb3eddd3dff5ef3247e5fd1de3fb",
+      "bytes": 595
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/db/migrate-cli.ts",
+      "sha256": "a2286f242fa00086858f5aba46c0cbeca57d3db4c9f777edeb41b1a5bac4a714",
+      "bytes": 256
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/db/migrate.ts",
+      "sha256": "b0d2bfed73588353527a301258aa177443cc5ccc0833635995d2b55c08bcac75",
+      "bytes": 1331
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/db/seed.ts",
+      "sha256": "9d5b87025c705b4215ae269c5df94ecbd4da3e40712d8f5157831858ac1564ab",
+      "bytes": 1641
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/errors/app-error.ts",
+      "sha256": "6eaf0eea917425b82111c3d3dd1e63c53b7019474d3638c22351a2203100a681",
+      "bytes": 315
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/export-openapi.ts",
+      "sha256": "c661ee8c4d6d68911adaf25659ed91af091eea8d12a4e9f59de01205d1c79aea",
+      "bytes": 819
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/modules/empaquetados/repository.ts",
+      "sha256": "d110d2eedfbba835a279e388cdb0693dfd9bf53643ed8800e43edea54d4d3637",
+      "bytes": 5055
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/modules/empaquetados/routes.ts",
+      "sha256": "93378d984eca0b117d34355ac24a4c00c8e946992bcccaf0538c3927b0c74ecd",
+      "bytes": 4213
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/modules/empaquetados/schemas.ts",
+      "sha256": "aa28a68bdb02726cd19998242a563c5cbb2dd0c8fd9ca103cf78980149f1443c",
+      "bytes": 4352
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/modules/empaquetados/service.ts",
+      "sha256": "fa65128377e0fa10b7e1eef222539d5f50b44be9000af6598c7f0c0fb13f6f23",
+      "bytes": 1218
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/plugins/error-handler.ts",
+      "sha256": "62488242b8e1a2e42350814fb0e1deeaaaa4e70168c41b7d18ad36e69cc4ef2b",
+      "bytes": 2912
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/plugins/integration-docs.ts",
+      "sha256": "5fed092be8b60028bab00c8a67e5ae48543e5f1fbd04b3d3fe3cf71184d28641",
+      "bytes": 17999
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/plugins/openapi.ts",
+      "sha256": "addcbf0689c0a2f68e1e3bab5d8edc44e056479ec45ab2a6ae25703b4254e393",
+      "bytes": 820
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/plugins/swagger-ui-theme.ts",
+      "sha256": "30d5c9e652e00a8b2059d13c483bdf393b8e3295b70282ef3f9ce4bb85329208",
+      "bytes": 2809
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/src/server.ts",
+      "sha256": "21c72a552a62dba0880decfac95e470292a39223b7f77a79ddb9e38e59abc1c3",
+      "bytes": 646
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/tests/empaquetados.test.ts",
+      "sha256": "b330d14ab0cc0bd06d3b569b1b7efa9c0848dcccc12d4ef1c627d6eb33a5e6ed",
+      "bytes": 5598
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/tests/helpers.ts",
+      "sha256": "ae091a5e016b7d32d32c764478be7ca9f5c44a8e7f36bf0456be876a0ad8e518",
+      "bytes": 1202
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/tests/infrastructure.test.ts",
+      "sha256": "032030cbd380bb0e87dc49ca1758b4644e6f90c304e95b409d5fc974caf32198",
+      "bytes": 4210
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/tests/validation.test.ts",
+      "sha256": "6d0290f61ad258faf4c151185bc9ba5f8035bc5593ee04ead0842ce8cb6626e6",
+      "bytes": 2865
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/tsconfig.build.json",
+      "sha256": "0fbe823bfd0fc1d6601e508ee111aeaef2c5a131993434b4f873c1325cbeef3a",
+      "bytes": 189
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/tsconfig.json",
+      "sha256": "af88da48e9545b81194ebd1728bb9737e546becd767aca9705c1a88495cbcf9b",
+      "bytes": 436
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/api/vitest.config.ts",
+      "sha256": "8c8a5c366bfad7340cb847ac4af572f5ade6a35e3e5bee3e10332522746839fc",
+      "bytes": 168
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/ARQUITECTURA.md",
+      "sha256": "72e02462f5cb345b97181d67d76a6704ef360350be548099d3f08b9332a15063",
+      "bytes": 6700
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/INTEGRACION.md",
+      "sha256": "cae9e23ccbadb826adf48b645c0b0313f96c5da8b309acaa3604c73c1690b9ba",
+      "bytes": 5409
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/LUCIDE-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "bytes": 3208
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/VERIFICACION.md",
+      "sha256": "2d5bcd59b24bc54c75a33c34ac78c1525dbbe950aee271415053f18f09f7e92f",
+      "bytes": 5763
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/capturas/escritorio.png",
+      "sha256": "9f19e3b4b5fd1f1130ff7549d3ff27d1d5680ee2f7fa547b4867d3398519c23d",
+      "bytes": 116351
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/capturas/formulario.png",
+      "sha256": "1c0d6566401cf09ea310d0474d92ec3fd6bd146dea20144bf4544835e9f9d575",
+      "bytes": 54661
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/capturas/movil.png",
+      "sha256": "5d7b1eb175ff413ca8a2e67143f7d38d84725032ee7b6a0386fce3a35f7ad87f",
+      "bytes": 47774
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/docs/openapi.json",
+      "sha256": "285a355688d7728f00b81ef1308245974b012ba50c9d96be58f342837a663509",
+      "bytes": 37268
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/package-lock.json",
+      "sha256": "7035d7199916796513be970660e838d15474fb8ecbf9c11bb380b130bb860906",
+      "bytes": 370392
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/package.json",
+      "sha256": "aff5d4f08d20db7160b964dd27221e17d885152d06bb02fd7086971836217e39",
+      "bytes": 1341
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/playwright.config.ts",
+      "sha256": "e861bfc9c4bacae1d65c6c8117310e7515704cb30e450d3ee7b6eb05c38a0f3e",
+      "bytes": 1276
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/scripts/e2e-api.mjs",
+      "sha256": "f7884fa688a91c03bf53d78db6457a91ac190bd49e89b05e7409adc2ccf23423",
+      "bytes": 1027
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/scripts/setup.mjs",
+      "sha256": "1d277636192b02615f947d03ad2a5c99cf29621351a2149f7e870bc6d58c4c29",
+      "bytes": 617
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/tests/e2e/empaquetados.spec.ts",
+      "sha256": "2632a31baf6d5b86872f70963ca5d8ac31be5be4ec631ec9282039db7ddc6343",
+      "bytes": 8156
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/tsconfig.e2e.json",
+      "sha256": "c414f4ec24d3d105eda774fd4394afe5d4192319b94b8a344373692f1994f271",
+      "bytes": 300
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/.env.example",
+      "sha256": "64988b9590552061d052f3967e0f757e0245b52e5e560e92f39fd3373b453aa2",
+      "bytes": 110
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/AGENTS.md",
+      "sha256": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb",
+      "bytes": 678
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/CLAUDE.md",
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+      "bytes": 11
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/eslint.config.mjs",
+      "sha256": "bf7e232bb3a5b39598c100697816e1a834f9c3cab913f7ab1fcb7291bb585545",
+      "bytes": 359
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/next-env.d.ts",
+      "sha256": "0f70629890b72a0a82e91972cc032c04b658b26c265373cb711cf576bfbf8fcc",
+      "bytes": 296
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/next.config.mjs",
+      "sha256": "70c524a32a62ff2f89c21c8074e09eb22908db8f79c3cc37f913b438f38c2098",
+      "bytes": 160
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/package.json",
+      "sha256": "3a6d61ac40b84670e6acbba67b72c0a0b418c6c76412bb50c0b8f3a797cc7b15",
+      "bytes": 892
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/postcss.config.mjs",
+      "sha256": "258faa39968594a46c2cf72ba120fb353e788ef2acc3265ddbfbc6400dd80761",
+      "bytes": 83
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/public/icon.svg",
+      "sha256": "353fa51dd8fac52adf3b9997a4f64a9fed050a45e2ff8833a95f9789151dbac1",
+      "bytes": 484
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/app/error.tsx",
+      "sha256": "9030e0cb0759e5bbd0979c7f80ad918058035ed83b28e66cd088d35d7244dd57",
+      "bytes": 524
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/app/globals.css",
+      "sha256": "c0805dc65567cc20eb55ef1aefaac125191f81fcda0e39c76ed730ee444ed9da",
+      "bytes": 728
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/app/layout.tsx",
+      "sha256": "7c09667b49b7dbe9bf74e015d0324d36515d6d631aaf92ccef8aa7fd480bff14",
+      "bytes": 555
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/app/not-found.tsx",
+      "sha256": "e5d6012f4f91d8224b35e7f156c70dc27dd50fd4453c40ac47e50a6414233763",
+      "bytes": 588
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/app/page.tsx",
+      "sha256": "2e36fa4cb0f840ccddb5a7e824f23d0b403741de96e454655f34853582573803",
+      "bytes": 153
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/dashboard.tsx",
+      "sha256": "793fe239c69f3b689701033401258d4f55bcadc9cc7c70a413e7c713e57e2f91",
+      "bytes": 6779
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/delete-confirmation.tsx",
+      "sha256": "528a9a5d7fc55816b9dd7e73949cb14635f2fc37b94df1c1f22d3d8d74f0af59",
+      "bytes": 2031
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/empty-state.tsx",
+      "sha256": "4d0a22eb8933bed6fb5ae36ca854e8b9ed7392e3b858ef6a3ecaff15767bffc5",
+      "bytes": 1388
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/filters.tsx",
+      "sha256": "9ffbf8f7c4cd0d54cdef69affd24045eb95ec80d82dcb1dba38f6864be72cf1a",
+      "bytes": 4082
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/measurement-guide.tsx",
+      "sha256": "c4294a06e32bdbf77f2a2a9e1a7bdcbe213155657c292001973038c3a334445e",
+      "bytes": 1808
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/number-field.tsx",
+      "sha256": "b334f2b8e32ca0d7439067a2beb2a133e080f0b48de07185494e90296a9b9d6b",
+      "bytes": 1244
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/pagination.tsx",
+      "sha256": "811cbcca26cb44693438387f3bdc9139eb74ee0aa8c97d763db34186e9112f00",
+      "bytes": 2298
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/record-details.tsx",
+      "sha256": "130c566cbd146bbe0ffdf79b885dc3268e9b0c13da6720bcef0afd23f94560ff",
+      "bytes": 3141
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/record-dialog.tsx",
+      "sha256": "65c74e6a207d64b72829d8a7065bb9152edc9614df43994fbac130a15508e4b3",
+      "bytes": 2380
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/record-form.tsx",
+      "sha256": "fcb0977817f526a3de439929509142ca94bdeec4251ce35a2775653243cfdfdc",
+      "bytes": 6929
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/record-list.tsx",
+      "sha256": "ccd73d7551a2aa901260eaaf6c1914c5335a139a9b3272a6183550b9eb7865b6",
+      "bytes": 6962
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/empaquetados/summary.tsx",
+      "sha256": "1a6f632aace07f762808ea5dfc332e92b7e4152967b954cc4c2ab577ac8c7aaf",
+      "bytes": 2014
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/layout/app-shell.tsx",
+      "sha256": "b76d5105c4ea636bd0fa4f258a89a78def4202c463a61c765ccc7af05beecb73",
+      "bytes": 5516
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/ui/button.tsx",
+      "sha256": "7475790b087204e12e1d7f325fcd965172a274ddd82ebf14d1517e74a5eeae6e",
+      "bytes": 1199
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/ui/dialog.tsx",
+      "sha256": "b408f4fe9995df57bff65e2e829ed0dd6030caf73f13ff4bacbbf01649f94c47",
+      "bytes": 2416
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/components/ui/feedback.tsx",
+      "sha256": "1cf64da8c42a2d0518d84576741f2ad010945e6167f789b428fc2d185a8bc00b",
+      "bytes": 1382
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/hooks/use-empaquetados.ts",
+      "sha256": "b4d9c50dc35206f12cc95a454a3d899ec623bd11ed9b0b997eb989f163bbb56b",
+      "bytes": 812
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/lib/format.ts",
+      "sha256": "6143f485e7f89dedce06563a28f32c6f6d822691c07f3076520e218318927510",
+      "bytes": 682
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/services/empaquetados-api.ts",
+      "sha256": "a998f00754602d70a1f1e4337cb66ed049cac9b8b037bf0694fff07b7be2a717",
+      "bytes": 1408
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/services/http-client.ts",
+      "sha256": "04f6b409951df6270302678f1dc377c60808ba276da42a25cba5cd3883febe56",
+      "bytes": 2550
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/types/empaquetado.ts",
+      "sha256": "212a08e9e46a182b0deeb8afb4f8dead10679a158c3d98ce0fbce860687e2141",
+      "bytes": 881
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/src/validations/empaquetado.ts",
+      "sha256": "f0eb1c178466eed8d9ce73ee74bfe75ac359bcb1d28c61c94b1b56a3a64b4672",
+      "bytes": 1541
+    },
+    {
+      "path": "empaquetado-service-main/empaquetado-service-main/web/tsconfig.json",
+      "sha256": "a640aa55a764a204e1e267a3c8892850749a37f99b393566c9375dd4d37c5f4a",
+      "bytes": 657
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/.env.example",
+      "sha256": "89e66ac2f8346ec8eda08f20c01a23c46335a3160239833a4ea9a3a51dcbebb6",
+      "bytes": 57
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/.gitignore",
+      "sha256": "10af1a66aae3772e926867070eb4a4ac9ac60a568db888f945b224465853e26e",
+      "bytes": 72
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/README.md",
+      "sha256": "4691a287fcf4adab4a0fb47f178a531cc543e46d8ab33ad894dbe91175fd9ad0",
+      "bytes": 17742
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/docs/ARCHITECTURE.md",
+      "sha256": "f52697759ce3777d78c3c157dd76bf67a232434ad51b21b6036c787cbaf8d76d",
+      "bytes": 10483
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/docs/INTEGRATION.md",
+      "sha256": "fc06d4c3927bd83878251e0ade9f47f8d5b067216bce3bc98b75efdbf77c0bda",
+      "bytes": 14470
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/package-lock.json",
+      "sha256": "8d33b7e32aae70e73c717bd87cdef37e6037fdc3ea4c7137254501b73ad0a163",
+      "bytes": 136287
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/package.json",
+      "sha256": "7f3c1f4e275f15663d310abf06333c1439dd830f6d8be1e530ede393dfc0b0c9",
+      "bytes": 1126
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/app.ts",
+      "sha256": "7b511d35fbe1e370f9c066b3610fc569d73fb1463893abbab6fbc48240e56dbc",
+      "bytes": 2605
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/application/purchase-context.ts",
+      "sha256": "8be37701fb396d51add7fcd89406395689f177770415b02713b3449347663e31",
+      "bytes": 1209
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/application/returns/return-service.ts",
+      "sha256": "277cdcee6a5f793a92241b886e11d85702ee541bc4f27846e5a96891baf17fc4",
+      "bytes": 2532
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/application/warranties/warranty-service.ts",
+      "sha256": "f1b9249e5e6219584799c286029e7bb8ab79ae9dc807e1aae3f42059b012248d",
+      "bytes": 2790
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/config.ts",
+      "sha256": "9053f7cb378a074e2d03e11df391de643b1a67a1024e4de28a8a8fa5465f4309",
+      "bytes": 700
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/errors.ts",
+      "sha256": "0e73addd5bb107d631544dac871be929ab61dfc194dca1e39b7f557751dea2d0",
+      "bytes": 619
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/process-status.ts",
+      "sha256": "4d84355fe75b7d93b085cd039018ab66d8a090efa62a9d01df08cb816dbe994c",
+      "bytes": 660
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/products/product.ts",
+      "sha256": "66e504fe8b9ac117d51bfabe5aa8e9eef84b99f92649371e3e13b332d3a89a33",
+      "bytes": 454
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/returns/return-repository.ts",
+      "sha256": "df95876b49310f1963484d6a8c3c41ae3e59eca08595f68218da47919ef5c978",
+      "bytes": 473
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/returns/return.ts",
+      "sha256": "1f0ff21762280b39ebeecdf2bb3259d4c4624cf6010bea2c4d87d3780aa763c3",
+      "bytes": 1437
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/sales/sale.ts",
+      "sha256": "d6def8bcbb37634db897debc2ba124637f41c9c7c2ace4aa2209e586040ec84c",
+      "bytes": 592
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/unit-of-work.ts",
+      "sha256": "5998b23ab7f95997f9792a3e414f81f83f27bbcade301f8a38fff064935e46c1",
+      "bytes": 823
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/validation.ts",
+      "sha256": "6197db734224e5a6e0ace017378ac1dce188e78af8bc26ecd27041d6c79f4b0a",
+      "bytes": 689
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/warranties/warranty-repository.ts",
+      "sha256": "3997446b2dcbe940b4dbff63b0a70e98921bc7bbfb5998352788752ea9e4d524",
+      "bytes": 378
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/domain/warranties/warranty.ts",
+      "sha256": "6693a8919e6b7d27c65e81e7e71332b556364953c961f973b2c0cdda4e2e5fc8",
+      "bytes": 1529
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/docs/integration.css",
+      "sha256": "42070e0b45bb201b2b838a52aaaa6e965f964e0b542d97f1fe517fe59c4b75a8",
+      "bytes": 23
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/docs/integration.ts",
+      "sha256": "37b1e1155badd7f00f9627fb664382cd068b8ab5b57e0af6a8ee33a20e55379c",
+      "bytes": 5578
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/docs/swagger-ui.ts",
+      "sha256": "c0670beab8a3dddd5c0c398cb4005d5eac3a6876dc24a83330fe981e4726417a",
+      "bytes": 2880
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/errors/error-handler.ts",
+      "sha256": "9b311792dc37c36b8df3e44892428fde2f56d120290306c61d2f004abc4a1237",
+      "bytes": 4172
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/routes/returns.ts",
+      "sha256": "149081cb515e5a28609ae12ece3b16e02da1c2cd5e3b0a7f7acd50ae9b06e6a3",
+      "bytes": 2408
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/routes/warranties.ts",
+      "sha256": "0d30ba88995c18deaf1eeff0f9c05d887d21992ee7132aec8ea51f870c398295",
+      "bytes": 2518
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/schemas/common.ts",
+      "sha256": "4833565608cdb735cd0cc21dc39b4dcbe68e4deeba15b5e78ad385b40a89e50a",
+      "bytes": 1268
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/schemas/returns.ts",
+      "sha256": "87c0b7c75dff0c4cb92e201b65960b91a1b5fab586deb38d405edf166658ae8f",
+      "bytes": 1077
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/schemas/warranties.ts",
+      "sha256": "a35cac9f6b7844126d2c6c3d8e6d8722f56a3d1c3620b81ed6627fce644d3152",
+      "bytes": 1130
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/http/serialization.ts",
+      "sha256": "c77a6887b9df99e06519acef5e7639d9c04bbd1903a0ead08b567f27cb9a882f",
+      "bytes": 761
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/infrastructure/repositories/in-memory-product-repository.ts",
+      "sha256": "268b1798de14f9824d31570092469b380c404be52bbacef3416696b97116ded8",
+      "bytes": 387
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/infrastructure/repositories/in-memory-return-repository.ts",
+      "sha256": "8d6fcd8d52e355ab15bb99338101638ac70b52eaf370e6db847567d3165e0fd2",
+      "bytes": 1536
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/infrastructure/repositories/in-memory-sale-repository.ts",
+      "sha256": "3f5934ca16e3a4a8e7898506fc555c7e72fe2d2ba952df5e5ff9821194ff141f",
+      "bytes": 672
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/infrastructure/repositories/in-memory-unit-of-work.ts",
+      "sha256": "8fe956b36f48831454797e1bc779d5dbc56b3c00f14e781b006a12e87cebcb6c",
+      "bytes": 2234
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/infrastructure/repositories/in-memory-warranty-repository.ts",
+      "sha256": "03a20e369d66e21f2f732314e5ae3fc2b59f690536933a68d62465852e7b7b3d",
+      "bytes": 1540
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/mock/data.ts",
+      "sha256": "85d8d582b4e51435f35adcb80217e783dc619d9db68acda34d359dfdd0287d3d",
+      "bytes": 1907
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/src/server.ts",
+      "sha256": "91402ea1eac449a6650d4a3ed7360b9d1d96e7b24a44ee9fdef164a2d030c652",
+      "bytes": 1108
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tests/domain.test.ts",
+      "sha256": "b5599cdc09df9431d1e70f85159041ab3620dcb78ad04e4a8178121dd9f931bc",
+      "bytes": 687
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tests/fixture.ts",
+      "sha256": "5c01c58650414ceb4dbe12747d6c53c4c59b71398ea804503e5989f6fe317194",
+      "bytes": 675
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tests/http.test.ts",
+      "sha256": "1e73dafa7b1f2f47cd4ee77faf531ce147107173b89b112254cc821c9178d2b2",
+      "bytes": 14866
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tests/repositories.test.ts",
+      "sha256": "6a9cae35ed68a250fd8fefaf4600d1e48b0ed1958da24d3a9432795385eedecb",
+      "bytes": 2620
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tests/returns.test.ts",
+      "sha256": "444abbe7a395dcb03ba3678c66d388410c25fd8e39e55a1acbc163bfde873c8c",
+      "bytes": 5349
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tests/warranties.test.ts",
+      "sha256": "652eee767d2e9d3f0f23edbe152805c632a803c37002b8f05a6e4e3640e7b867",
+      "bytes": 4800
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tsconfig.build.json",
+      "sha256": "d271abe2beb574b09df0cc53447c79d62cc71e0fb382cb45bf8655bad0f21c01",
+      "bytes": 228
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/tsconfig.json",
+      "sha256": "2f83636f9b76b0845fb713b39c15a0ea5b8ff765f2aad35068e2375069760058",
+      "bytes": 533
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/.env.example",
+      "sha256": "9f5564e054c248755b425108257a8d8745dbb132cd085c1843e18d7e61a7aa01",
+      "bytes": 118
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/README.md",
+      "sha256": "7a25fb0efcb4d599131fdeaa7f917349b7727182112ff0d2a3fcba6196a664cc",
+      "bytes": 3254
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/index.html",
+      "sha256": "692e7358fccbdff41953156701cc28b701a0792f90e041602d2859b384ca526b",
+      "bytes": 482
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/package-lock.json",
+      "sha256": "09b37ab137037cada3588e53422a4158543355c01c6afb1e6903f4e5b9874dcf",
+      "bytes": 64229
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/package.json",
+      "sha256": "720e0857005d74a364f5da79b3e651d883123ee6548c8955c7ae77d5faef15d0",
+      "bytes": 763
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/App.tsx",
+      "sha256": "b0b6757a4c7a62ed8d42a9f6bdbe05c7023fcec9e1f4e85e5297e9b2de26b0b0",
+      "bytes": 3342
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/api/client.ts",
+      "sha256": "38dca8be85996f3148581531e530889c5caba6075a94336e46a8a8ad8c78e7e0",
+      "bytes": 2354
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/api/contracts.ts",
+      "sha256": "6ab22e80084353e6c90bb817bbbd47d6550a40f0ff56190c31104072b02dab8f",
+      "bytes": 1462
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/api/requests.ts",
+      "sha256": "986a02f823241b1f907f5b17b32db350681bf4e4e36e65c9101043de2b22a911",
+      "bytes": 1567
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/CreateRequestDialog.tsx",
+      "sha256": "2de24da4d4c1655c9f17e8976d35ab958edfd7d9782eafc3f6c7e1e4c31f0bf1",
+      "bytes": 5570
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/Feedback.tsx",
+      "sha256": "99f9fa0d205420e06e57fe4dbdb2807fa74e6f10a6db0c26f6a5c672b6c722ea",
+      "bytes": 2169
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/Modal.tsx",
+      "sha256": "e79d37130c19262db6b8f9ef33b025cc7463b1a51b5a2d64d6156db1bb63583b",
+      "bytes": 2030
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/RequestDetailDialog.tsx",
+      "sha256": "4352c7f481459f1ef04491967a6543c1fb3056a999a759d5816c870b74e7bc34",
+      "bytes": 7015
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/RequestTable.tsx",
+      "sha256": "d81e465106d289ba1ed79edad771cc5ff9d28d53386a1104cea551a25c9863c3",
+      "bytes": 6036
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/StatusBadge.tsx",
+      "sha256": "f13f3f86882977d5c3aa1ad963870fdf5d8b6d1cb9083773fe33515d523d6a86",
+      "bytes": 295
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/components/StatusForm.tsx",
+      "sha256": "8540ba26ad522b94aa575d2a69bfcc66732c95f7b7cbdef8f0a295150ca3ab82",
+      "bytes": 5678
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/hooks/useResource.ts",
+      "sha256": "181e3f35a943222740fa8dfec79e2c76520c6cf2905e53e1848007cadc10b16b",
+      "bytes": 1143
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/main.tsx",
+      "sha256": "3d1d49bc2666d51398e87c321952e99f349f1896744e1a24d5b36686ea718a9b",
+      "bytes": 381
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/styles.css",
+      "sha256": "455ea18955e66b07bcb818785d82d6a92df2e52e5e19dfd24d7fdcb695929775",
+      "bytes": 4577
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/utils/forms.ts",
+      "sha256": "434bd4400f873e0cd0f11f16b46c463717eae3426225d0cead0b8eadfb02918a",
+      "bytes": 423
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/utils/presentation.ts",
+      "sha256": "bfcdc7a60742d8dcede9e298138e48f876ddbe98f577c191f9a61484da78f80f",
+      "bytes": 2163
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/src/views/RequestsView.tsx",
+      "sha256": "3131a94464303987579e64b1747e59b1c29c9df8ad20a78f67691f122b178061",
+      "bytes": 5938
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/tsconfig.json",
+      "sha256": "beacf67da57ee164f05703c24339fa961ddbb33e8d583b55b1f562d1b486ae87",
+      "bytes": 539
+    },
+    {
+      "path": "garantias-devoluciones/garantias-devoluciones/web/vite.config.ts",
+      "sha256": "390fd38d8a28c11581627767689ced448dd7573d4c03ede915e170e88b3c7841",
+      "bytes": 672
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/.env.example",
+      "sha256": "583513819c54efc13f64f5e79f59baa780687d44dd9a68c831c9374a393f595f",
+      "bytes": 196
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/.gitignore",
+      "sha256": "374de62d3abb64a84085ac1bce72335e6cbb278a9eceec11a637c3c7853d93c6",
+      "bytes": 57
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/README.md",
+      "sha256": "dda2c1337ac48e3740d0be475de64c60df0f81527e8104ca93689b380b303471",
+      "bytes": 3464
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/app.py",
+      "sha256": "6d714bbad82774866d1ec8cb996fee6fa5886e8f20406454e39280ca1d94b0f8",
+      "bytes": 9966
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/database.sql",
+      "sha256": "c3206a482782ec76c48a8d58328300f5f543ef9c08d4ed93c878155e580e29be",
+      "bytes": 1937
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/requirements.txt",
+      "sha256": "fd2aaed188f57a2e4b95736620751f2e16c109414c86167bd2af9b1a14512b07",
+      "bytes": 74
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/templates/base.html",
+      "sha256": "e4b1ed9266cf9662bae9ebf45aa74917a8f3254bd8512accdcc8dd1e34c33366",
+      "bytes": 1084
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/templates/envios.html",
+      "sha256": "c157e6399617026c0e9f6ee949ba3a1b44d6ab4c51ee1ca08367a60c9268f941",
+      "bytes": 3719
+    },
+    {
+      "path": "logistica_envios_python_arreglado/logistica_envios_python/templates/nuevo_envio.html",
+      "sha256": "edd1453a935ffb42f3de8bfd6b342c3b885382d3bcc83a3006010a027c982fc2",
+      "bytes": 1930
+    },
+    {
+      "path": "microservicio-historial-compras-main/microservicio-historial-compras-main/HistorialCompras.html",
+      "sha256": "b034ed95b7cb57915f12581ae7c9ba8c807c76a685400d21e2d00fd113346d14",
+      "bytes": 11050
+    },
+    {
+      "path": "microservicio-historial-compras-main/microservicio-historial-compras-main/README.md",
+      "sha256": "5bf37aa7027af1b112a5ed35778e3d173dd00fff6ca441131fb91ad4ca738ee5",
+      "bytes": 2071
+    },
+    {
+      "path": "microservicio-historial-compras-main/microservicio-historial-compras-main/main.py",
+      "sha256": "8640e1fbc6ef5570716076ad571d373c741ccfa9deb70f75cff83dd2f2f33e24",
+      "bytes": 3109
+    },
+    {
+      "path": "microservicio-login/microservicio-login/.env.example",
+      "sha256": "5906bdfcd42f70d0781f3c75624b51e199932a26bfd0d401b07dd1f8b89ea302",
+      "bytes": 598
+    },
+    {
+      "path": "microservicio-login/microservicio-login/.gitignore",
+      "sha256": "05696140caa5469646c969934a7b3814b8a89df188bc7b03127a29ff44acc33d",
+      "bytes": 128
+    },
+    {
+      "path": "microservicio-login/microservicio-login/README.md",
+      "sha256": "85c656447e4efca8e3bf7cd38a79dae44700b608ef24a6e925f2a7985255e4d1",
+      "bytes": 13361
+    },
+    {
+      "path": "microservicio-login/microservicio-login/database/esquema.sql",
+      "sha256": "2b117e5a6b0b6dd13d2b014de16d4cb06e009125faf5784ee7b6994d25098e4a",
+      "bytes": 2715
+    },
+    {
+      "path": "microservicio-login/microservicio-login/docs/tecico.md",
+      "sha256": "10e59ec78a2193c9a359deab9d55f2651327e17f2ae82e82b9a4a0bc36e7e3f5",
+      "bytes": 13378
+    },
+    {
+      "path": "microservicio-login/microservicio-login/package-lock.json",
+      "sha256": "5fa4f61fcf78955555c8e874e5a0e21d95943068e82c66402a5c936cd298df6e",
+      "bytes": 53107
+    },
+    {
+      "path": "microservicio-login/microservicio-login/package.json",
+      "sha256": "526f57708e60dd40c18d823eae8e74943a3d9973f1b43369c10f8a6cfdbe8a49",
+      "bytes": 964
+    },
+    {
+      "path": "microservicio-login/microservicio-login/prueba-api.html",
+      "sha256": "8687ba2aa3901c8c1ba70d98a4c648f7695e0748135810e9915efef9b3c9125f",
+      "bytes": 13565
+    },
+    {
+      "path": "microservicio-login/microservicio-login/scripts/crear-esquema.js",
+      "sha256": "77e9c86bb96158f2d6b4bc44551e44a2bd006cbf9f1206ae9b8ff91cdf21441d",
+      "bytes": 1267
+    },
+    {
+      "path": "microservicio-login/microservicio-login/scripts/crear-usuario-app.js",
+      "sha256": "0b97c6628b041a6c2fd6bfd24c13862dc8fb56d1293442c9a7b4e69f9dac5740",
+      "bytes": 1739
+    },
+    {
+      "path": "microservicio-login/microservicio-login/scripts/crear-usuarios.js",
+      "sha256": "ece336237bd1d4465764c62af6806894f000b070a9eee39570218952183118ea",
+      "bytes": 2785
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/app.js",
+      "sha256": "5e41af000a09e84de3de922e4c891b847c999e735677304c2fc96aded4be0ba0",
+      "bytes": 1796
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/config/baseDatos.js",
+      "sha256": "253509de3249e22f512eb9c0742706583adee0d04476428b7fbb0cc58259d802",
+      "bytes": 1058
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/config/entorno.js",
+      "sha256": "bc29a2d4d317287ae4a3cec0c898ee39083f782435a1bccd720770ffc6ad5b92",
+      "bytes": 2208
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/controllers/autenticacion.controller.js",
+      "sha256": "ed8bfe6f169ffa8d7049b0e78765ef422536ee395a035a915608f132250cdfea",
+      "bytes": 3585
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/middlewares/autenticacion.js",
+      "sha256": "299664b40e3aa8d6fc27e90bc4333b54cd482c40d2ae98fa7dc58afc248bd906",
+      "bytes": 1439
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/middlewares/controlAsincrono.js",
+      "sha256": "e3c6e677ffef98d151efcf8bd1d95c32f27f6c10ad5e47db057ed6e06d5e359a",
+      "bytes": 134
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/middlewares/errores.js",
+      "sha256": "57e67a8e89caa021505a2fc22d2a40de829e229b290bbb95b5de4e66e4487d07",
+      "bytes": 2028
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/repositories/usuarios.repository.js",
+      "sha256": "ad130c8385abfd2bbe68914ee4ca3d2c8c7ad6c729e0f5e5bd168090df04a7db",
+      "bytes": 3334
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/routes/index.js",
+      "sha256": "1e79cf84dffed0c17079ef2c2500b0bcfdb9bc7bb3770e6defb9209d43cd268f",
+      "bytes": 2329
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/server.js",
+      "sha256": "344a2570ef4c4956e80f9589c453e14e2af0d6b5e5dbb803cade943e0e7585ec",
+      "bytes": 2556
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/services/autenticacion.service.js",
+      "sha256": "fbccfd829379798be02dc3bfc68deaf79329a40734a344d11316708ac37e55f6",
+      "bytes": 4019
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/utils/errores.js",
+      "sha256": "a6d545daaf0c06cd1056f98fbf10af2835bc380c844f6d97ead0bb6889751f81",
+      "bytes": 1086
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/utils/jwt.js",
+      "sha256": "6bcf0824d5ccbaae4ab0657ccc4e7f0dfdfc219970f76392a9d78a320890a462",
+      "bytes": 994
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/utils/logger.js",
+      "sha256": "90bc442d728d46d1785847643ca3191bd5a215d77a8843ef518a0ac3158c29d2",
+      "bytes": 958
+    },
+    {
+      "path": "microservicio-login/microservicio-login/src/utils/passwords.js",
+      "sha256": "bf17fb3a263fec102ff7e4611c029052a1fb3383629fda86e8209d7c915aa95a",
+      "bytes": 288
+    },
+    {
+      "path": "microservicio-login/microservicio-login/tests/integracion.test.js",
+      "sha256": "3d6a6b0a4ed0456e0def5a15ae63a0f39a23b8c76146aadec4f17a339965b70a",
+      "bytes": 9203
+    },
+    {
+      "path": "microservicio-login/microservicio-login/tests/setup.js",
+      "sha256": "61e78ea7f223d64bf07fc91f29e261ac0aea6c6a7794f4154c8080bc96a811e3",
+      "bytes": 284
+    },
+    {
+      "path": "microservicio-login/microservicio-login/tests/unitario.test.js",
+      "sha256": "4e367b1c91446ba33f22dc1fc8e9bc2e6f45cb8a80660bf51f8b84d5a4de94ef",
+      "bytes": 6923
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/.gitignore",
+      "sha256": "9424640f9163242d0fe49e12627b76640dadad7d6ff7abfeeeeb1d2d1e86fdb9",
+      "bytes": 48
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/README.md",
+      "sha256": "219152afe1bc41038e2fd4d4a681b2cc2a97d006038b101d77fac78ea49263a6",
+      "bytes": 23425
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/database/connection.py",
+      "sha256": "73ca85f4a72ce9d9c4978d1498d609536c02dc986b21796ce464ba0528f13471",
+      "bytes": 426
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/database/models.py",
+      "sha256": "3fcb06bfe4ae82c72aced355e4cc11d1ce113110c01914204a9d4de32b7549e5",
+      "bytes": 576
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/database/session.py",
+      "sha256": "82f0bd1d66c80a15a8c8b22bbcf4d71eb43f1b382a915430aeadb4a896fc4ca3",
+      "bytes": 184
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/main.py",
+      "sha256": "48a1feba9439fc431dfa44c6d2a6cee62d07900994fff6009be81ec9cced8e07",
+      "bytes": 433
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/routes/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/routes/validacion.py",
+      "sha256": "280e774079bedc62641378e6d965574c381a9888a24bfd87296e42fe81ffe468",
+      "bytes": 709
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/schemas/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/schemas/validacion.py",
+      "sha256": "c0671a42aeb588eef78a3bdd58a85cb4a94bcf8f5e05e958cb1571831bc8b18d",
+      "bytes": 275
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/services/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/services/validacion_service.py",
+      "sha256": "96a94cf1594b8c4fe67598cd55bf994bb12def780ed6187da119cc0c3a058015",
+      "bytes": 2918
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/simulador/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/app/simulador/paqueteria.py",
+      "sha256": "7b05614873f566920ebf375167b8801962addeb927f99a4eeae93305d06d521a",
+      "bytes": 777
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/requirements.txt",
+      "sha256": "cad6742bb389fa46aa8ec84c63b3ecf01a23352e02b4414544aae13f7208bdd7",
+      "bytes": 610
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/test_model.py",
+      "sha256": "9ad159b6b88d560b9947541b692ce7d343571a1c2e3a49a284172e809c20c87a",
+      "bytes": 755
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/test_mysql.py",
+      "sha256": "fcfdc9bf6e82473df22f9b613a599d7649d614d90ca0c412bfbcae108c562df2",
+      "bytes": 1174
+    },
+    {
+      "path": "microservicio-validacion-entregas/microservicio-validacion-entregas/test_sqlalchemy.py",
+      "sha256": "499c425aaadf993ca7e394f5b91107eadae6b9b1444da787357d307961f7cb55",
+      "bytes": 501
+    },
+    {
+      "path": "modulo_comprobante/.env.example",
+      "sha256": "e90dd933230f7c5e9776401fdd9c49af6e8322da933499174497b6516b4e5f75",
+      "bytes": 288
+    },
+    {
+      "path": "modulo_comprobante/README.md",
+      "sha256": "870bc411357e8c08387d5167971c6781f36a8a10834426021fba774462fda9ba",
+      "bytes": 774
+    },
+    {
+      "path": "modulo_comprobante/app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "modulo_comprobante/app/config.py",
+      "sha256": "2ef961472c45d2d1b15dcb5528440e79cb12e18b536f6a22a19bfec996cccd71",
+      "bytes": 781
+    },
+    {
+      "path": "modulo_comprobante/app/main.py",
+      "sha256": "1cd80e9adccb7377805a45c8b8e3bcabdb4d3532f2dbb5160de3e563f78c6c77",
+      "bytes": 572
+    },
+    {
+      "path": "modulo_comprobante/app/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "modulo_comprobante/app/models/comprobante.py",
+      "sha256": "90bfc2a699620fb7e9c0d86c4ada3318f06f1711b6d6bba60d0f4cc20b90d00a",
+      "bytes": 1212
+    },
+    {
+      "path": "modulo_comprobante/app/routes/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "modulo_comprobante/app/routes/comprobante_routes.py",
+      "sha256": "fc0d0ac7b3e47d75a4e6405c547b21d9d967efaeac6c5ca35344d5b4b8e3786b",
+      "bytes": 2206
+    },
+    {
+      "path": "modulo_comprobante/app/services/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "modulo_comprobante/app/services/db_service.py",
+      "sha256": "bcb0400a50cd17ebce080f661e492da55ffcbd0a997ccab3eb7d1ec1ccb68ede",
+      "bytes": 2469
+    },
+    {
+      "path": "modulo_comprobante/app/services/email_service.py",
+      "sha256": "8986d0dd83a3eb96a26c2c83b042c5b837ddbf16ce5b0f2547a5e8106c47f9f9",
+      "bytes": 1434
+    },
+    {
+      "path": "modulo_comprobante/app/services/pdf_service.py",
+      "sha256": "fede0f01dab8016844dea14b978a0049aeaccd7a6d68341ed40fc7c31038989e",
+      "bytes": 2259
+    },
+    {
+      "path": "modulo_comprobante/requirements.txt",
+      "sha256": "f9c29d6e608e5848570f78aa6ad15e57367df69ded7aed63f432341ee5cb298c",
+      "bytes": 100
+    },
+    {
+      "path": "modulo_comprobante/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/.env.example",
+      "sha256": "4b2c143473ea1ce18848adf43ad6275d4cf574a7888a7b4957fd0c414c21177d",
+      "bytes": 137
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/.gitignore",
+      "sha256": "4ad2dd72b5b8511335b75e7b4dac1a8c92c576a7735f1e275b58c26ef1a1bef2",
+      "bytes": 25
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/README.md",
+      "sha256": "0c869d9bcf9322ae5ed00e7b92626494e646768411b4f090d41b176748ddfc2d",
+      "bytes": 12855
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/VERIFICACION.md",
+      "sha256": "e86f9f06109bc0da7ebba342a74d10c363a341f51849b98596cb8e332e00a267",
+      "bytes": 692
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/package-lock.json",
+      "sha256": "e791d8407d8ab9722b2783738d765ba4cf74065438ef0cced67a14d0f291f169",
+      "bytes": 35247
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/package.json",
+      "sha256": "a7b21e5dd888d2022e7b0d3af05ade18df41f15bd60cc1488ba66c02084bd60e",
+      "bytes": 486
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/postman_collection.json",
+      "sha256": "4c6d8fadd12ed5552aeff6b030cd0421e1573cc284542b5f29a1a9ad0cc64d5b",
+      "bytes": 2368
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/.env.example",
+      "sha256": "4b2c143473ea1ce18848adf43ad6275d4cf574a7888a7b4957fd0c414c21177d",
+      "bytes": 137
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/.gitignore",
+      "sha256": "4ad2dd72b5b8511335b75e7b4dac1a8c92c576a7735f1e275b58c26ef1a1bef2",
+      "bytes": 25
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/README.md",
+      "sha256": "0c869d9bcf9322ae5ed00e7b92626494e646768411b4f090d41b176748ddfc2d",
+      "bytes": 12855
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/VERIFICACION.md",
+      "sha256": "e86f9f06109bc0da7ebba342a74d10c363a341f51849b98596cb8e332e00a267",
+      "bytes": 692
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/package-lock.json",
+      "sha256": "e791d8407d8ab9722b2783738d765ba4cf74065438ef0cced67a14d0f291f169",
+      "bytes": 35247
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/package.json",
+      "sha256": "a7b21e5dd888d2022e7b0d3af05ade18df41f15bd60cc1488ba66c02084bd60e",
+      "bytes": 486
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/postman_collection.json",
+      "sha256": "4c6d8fadd12ed5552aeff6b030cd0421e1573cc284542b5f29a1a9ad0cc64d5b",
+      "bytes": 2368
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/sql/01_base_datos.sql",
+      "sha256": "b4e8d86039a674f479453878fbcb23a6a607d4b5b912c9445f9a941be0713dc9",
+      "bytes": 2541
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/sql/02_usuario.sql",
+      "sha256": "93e8e06df2b4bafc20c8ae8db6bd1f0f70cbd2f145d72a04235bf2e4ba3a5ea4",
+      "bytes": 289
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/src/app.js",
+      "sha256": "71508fa2c158437d9fbbdb7f3fc399ede6afd0ad58b808d30a5642bd857896f8",
+      "bytes": 1898
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/src/reportes.js",
+      "sha256": "93b2c847680d284bf850cac4d86cb1308e06adc94c7fa365ff9b2eaebe8fc314",
+      "bytes": 3526
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/src/server.js",
+      "sha256": "456170c0ac7cf9e7e8d0df9f1f7ecd0520aa99f20ceee855f925d087726d7620",
+      "bytes": 1473
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/src/validacion.js",
+      "sha256": "c42504ecac348d3653a303dc774565c4afcec03e59379a0d3f884e14fb620503",
+      "bytes": 1850
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/test/api.test.js",
+      "sha256": "145d6cf44c7fdeae7ad7b22b39daca526c5ad933688fbf8dd7a220f6106cc6d2",
+      "bytes": 2423
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/servicio-reporte-compras/test/integracion.js",
+      "sha256": "75eb83a70a8a14df5178c08a356a20dc2979ff22eeef5ef930eedab846514a98",
+      "bytes": 2020
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/sql/01_base_datos.sql",
+      "sha256": "b4e8d86039a674f479453878fbcb23a6a607d4b5b912c9445f9a941be0713dc9",
+      "bytes": 2541
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/sql/02_usuario.sql",
+      "sha256": "93e8e06df2b4bafc20c8ae8db6bd1f0f70cbd2f145d72a04235bf2e4ba3a5ea4",
+      "bytes": 289
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/src/app.js",
+      "sha256": "71508fa2c158437d9fbbdb7f3fc399ede6afd0ad58b808d30a5642bd857896f8",
+      "bytes": 1898
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/src/reportes.js",
+      "sha256": "93b2c847680d284bf850cac4d86cb1308e06adc94c7fa365ff9b2eaebe8fc314",
+      "bytes": 3526
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/src/server.js",
+      "sha256": "456170c0ac7cf9e7e8d0df9f1f7ecd0520aa99f20ceee855f925d087726d7620",
+      "bytes": 1473
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/src/validacion.js",
+      "sha256": "c42504ecac348d3653a303dc774565c4afcec03e59379a0d3f884e14fb620503",
+      "bytes": 1850
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/test/api.test.js",
+      "sha256": "145d6cf44c7fdeae7ad7b22b39daca526c5ad933688fbf8dd7a220f6106cc6d2",
+      "bytes": 2423
+    },
+    {
+      "path": "servicio-reporte-compras (2)/servicio-reporte-compras/test/integracion.js",
+      "sha256": "75eb83a70a8a14df5178c08a356a20dc2979ff22eeef5ef930eedab846514a98",
+      "bytes": 2020
+    },
+    {
+      "path": "servicio-roles/servicio-roles/.env.example",
+      "sha256": "f8a4073513a57314699014915f453f88bb67a90eb04bf0f52255fdaa0b4d3097",
+      "bytes": 159
+    },
+    {
+      "path": "servicio-roles/servicio-roles/README.md",
+      "sha256": "db42a8c46b60bc5d2c05319d3e70761b550fb7c843553bad8c062c57d2189403",
+      "bytes": 1451
+    },
+    {
+      "path": "servicio-roles/servicio-roles/package-lock.json",
+      "sha256": "86a8b010d520e06fc62f419ee7d294f41b1eff9ebd5ec50f658c51d3e7594196",
+      "bytes": 40019
+    },
+    {
+      "path": "servicio-roles/servicio-roles/package.json",
+      "sha256": "e1831c01156eeb50666d7bae4ab55d95edc434d5ec0e20ac27b2cf483cf4e18c",
+      "bytes": 401
+    },
+    {
+      "path": "servicio-roles/servicio-roles/schema.sql",
+      "sha256": "92193bf9d8addbc85d03bfa9bc49d64cd3e3a8b5a192b1144f4a4ca7746c877b",
+      "bytes": 1481
+    },
+    {
+      "path": "servicio-roles/servicio-roles/src/app.js",
+      "sha256": "11ec0499d41ed72e62029bcbe3a74de8e5946f16daa37cfd29d97eb700e5ba2b",
+      "bytes": 668
+    },
+    {
+      "path": "servicio-roles/servicio-roles/src/db.js",
+      "sha256": "98ed9cb5fc1b73080ba1f420edde1ffa8a20ff79539f81246a4dd0ef28de81cb",
+      "bytes": 318
+    },
+    {
+      "path": "servicio-roles/servicio-roles/src/middleware/auth.js",
+      "sha256": "e5735ddd6f0a128aea672982f20cb2d10f096199047cf2c567e9f3ac539bc62f",
+      "bytes": 1732
+    },
+    {
+      "path": "servicio-roles/servicio-roles/src/routes/auth.js",
+      "sha256": "5c5b3480ace8f5895cf7d7d2880ffa6d03144fde0b65cad709c4271e3a51214f",
+      "bytes": 2121
+    },
+    {
+      "path": "servicio-roles/servicio-roles/src/routes/roles.js",
+      "sha256": "17c83ed3d507549b74449d397999c9e1bdb030c38b2639379863edf5f23d18e5",
+      "bytes": 1028
+    },
+    {
+      "path": "servicio-roles/servicio-roles/src/routes/usuarios.js",
+      "sha256": "9cf71d3d5c0953fda4bf75f9ed85d825de35a7218ba68309dcc7f8ad526bf9a1",
+      "bytes": 2180
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/.env.example",
+      "sha256": "438bba639fc0bb54c8687d39f07c39b3a72912718eec0fa261ee26db25923e61",
+      "bytes": 282
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/README.md",
+      "sha256": "68fbfd7da7fa2b1510f7a3b66cdac95d89ee5ab87e20959cf6cb765713d07fb8",
+      "bytes": 6562
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/package.json",
+      "sha256": "b7a8c604a7d5476f1763fe18cc432051793b94aba3efd0495b4f5851d4df366c",
+      "bytes": 842
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/prisma/schema.prisma",
+      "sha256": "c352c253fd508f7d2ab0847937023430b2fc84bb0ad44eb27dd26b724c57c2fb",
+      "bytes": 1233
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/app.ts",
+      "sha256": "8b4eed01c196f1694cda1326c694c9c7a6f56051fd6448cc77dbde0ea4817939",
+      "bytes": 236
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/config/prisma.ts",
+      "sha256": "406a0b2393a3e2a4e19229ca951736ada2bcc58859c6b0aad5d6dd1dfe97ce72",
+      "bytes": 219
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/controllers/auth.controller.ts",
+      "sha256": "889f0e32b951a25690af470e3abb011fb42843df4001a232facc3a14befd65d2",
+      "bytes": 2463
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/middleware/auth.middleware.ts",
+      "sha256": "d57b4c02bab3a725ecda88e807d47d5df779a23497f9bb42e9b90d360feedb63",
+      "bytes": 1093
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/middleware/role.middleware.ts",
+      "sha256": "b08c9b05623dddaa9e02af9ae6cbbfde39af28b033553174135bea2a96caa16c",
+      "bytes": 1461
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/routes/auth.routes.ts",
+      "sha256": "b85c7fcdd1890314eada276edfcd522f8bff6fb5fcf926cc8639b7853c13f55f",
+      "bytes": 808
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/server.ts",
+      "sha256": "4eed077453b403536214550e8d94ea40835802694c0fcd010c2e27228901f6a5",
+      "bytes": 209
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/types/auth.types.ts",
+      "sha256": "787cb3301c4903664bedb7d0ffe2a370586f14a7e7608c3b78efc30f490e99ec",
+      "bytes": 469
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/src/utils/jwt.ts",
+      "sha256": "29b6e43b76a6878bc3b6b723b1d0eb02c947e462efa13cdd1781b9a78d0ab256",
+      "bytes": 595
+    },
+    {
+      "path": "servicio-verificacion-rol/servicio-verificacion-rol/tsconfig.json",
+      "sha256": "c8d358e8e644a22a25b073e946d44a8337732f17e09c1c667987c48da9207e73",
+      "bytes": 372
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/.env.example",
+      "sha256": "a2695a33f38bb96330a593b6876d8253e1cc741d8542625cc42dc019d8e6cf57",
+      "bytes": 360
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/INSTALACION.md",
+      "sha256": "b239d06972da5aa6d5b9eca23e69df59c3dd3d30cd753e26a823aef5526a08d3",
+      "bytes": 4737
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/README.md",
+      "sha256": "cb7186f542c00ab8b6de7cc718fa9c1e1a52077f02adea1748f98cf200680e6f",
+      "bytes": 3627
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/database/bd02_tarjetas.sql",
+      "sha256": "1f10a6f40002aa46691ce7ec70c08c3e46e64ed987a45eb3ef10e724a025afc2",
+      "bytes": 7764
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/docker-compose.yml",
+      "sha256": "1bb797d3de4923d3782cc1d86c3327d46ae817f5c955fa3addf4c3ed76db79b9",
+      "bytes": 338
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/docs/SERVICIO_VERIFICACION_TARJETA.md",
+      "sha256": "2d4d36288ac554d2696587abf4e3f2037cf1efe20bdc19a8929f44548e84a5aa",
+      "bytes": 9299
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/package.json",
+      "sha256": "c55dd5b4e944eb412c6911457b4af43e5641725467345fb0ca5bcd29f710aa42",
+      "bytes": 1091
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/prisma/schema.prisma",
+      "sha256": "12071798f54e59cf8047cb989fd9c118fb7059fea7e7459299ee9875e9bc455a",
+      "bytes": 6707
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/prisma/seed.ts",
+      "sha256": "ce39675017cc7819eab384f15356a0eb60bf40b2e0c590b12940f0f5b241d376",
+      "bytes": 3708
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/public/index.html",
+      "sha256": "103992aa6cdea3c6b124c998fbd0f7ac32f2f54e617480ee063e21e6a2ed1910",
+      "bytes": 4177
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/public/style.css",
+      "sha256": "5772584cd37a74732b6cc1111eaf67417ad378504185420ed901571fe28416c2",
+      "bytes": 5115
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/public/tarjetas.js",
+      "sha256": "9bb656792e0261463b31d00041492e41e069b4dba122378c0cbb9a5fa99b9156",
+      "bytes": 12851
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/requests.http",
+      "sha256": "8328df825cac8f9bf578179cddad6b6e8330405abf0516e9b00838263f04b264",
+      "bytes": 2244
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/scripts/probar-validador.ts",
+      "sha256": "ac5801ebfa9e6253099a24fac7a1dc1e3805af6abedf3c4c10d7640ee5de8e39",
+      "bytes": 4146
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/app.ts",
+      "sha256": "850b785e18fca27ab9f46ad9006377a35cb90aba311f87ddb9e80c9d74f6a3aa",
+      "bytes": 913
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/config/prisma.ts",
+      "sha256": "406a0b2393a3e2a4e19229ca951736ada2bcc58859c6b0aad5d6dd1dfe97ce72",
+      "bytes": 219
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/controllers/auth.controller.ts",
+      "sha256": "889f0e32b951a25690af470e3abb011fb42843df4001a232facc3a14befd65d2",
+      "bytes": 2463
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/controllers/pago.controller.ts",
+      "sha256": "c46d6b68fe3985916fdf5a98717ed301109042c59a723b62f457408431649a96",
+      "bytes": 5836
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/controllers/tarjeta.controller.ts",
+      "sha256": "55365e269968ed2c5bf520be5c5915267d9291747f1aa9265736a74c58a3b106",
+      "bytes": 5002
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/middleware/auth.middleware.ts",
+      "sha256": "d57b4c02bab3a725ecda88e807d47d5df779a23497f9bb42e9b90d360feedb63",
+      "bytes": 1093
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/middleware/limiteIntentos.middleware.ts",
+      "sha256": "ec734f862657f0c6b3e721df372577fee4a756d4790a67991c3c33949736d200",
+      "bytes": 910
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/middleware/role.middleware.ts",
+      "sha256": "b08c9b05623dddaa9e02af9ae6cbbfde39af28b033553174135bea2a96caa16c",
+      "bytes": 1461
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/routes/auth.routes.ts",
+      "sha256": "ac85c67dbeb5e6ead7075b63477b6dfc083813a4972761413cdce241bf5fa502",
+      "bytes": 890
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/routes/pago.routes.ts",
+      "sha256": "04bd6c65a24d29af886f5b3788e4721e74d33fd34e8a170f4c3af280f7ce75e0",
+      "bytes": 670
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/routes/tarjeta.routes.ts",
+      "sha256": "2f88b8e636136b5d418103045b0b8c58c647316939dbd77ac1cd093802cc7e2e",
+      "bytes": 942
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/server.ts",
+      "sha256": "4eed077453b403536214550e8d94ea40835802694c0fcd010c2e27228901f6a5",
+      "bytes": 209
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/services/pasarelaSimulada.ts",
+      "sha256": "c6b7c96b950f87963ec7984fbb65c91dd223c780d8d1f6318ec76ec0721ecf69",
+      "bytes": 2202
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/types/auth.types.ts",
+      "sha256": "787cb3301c4903664bedb7d0ffe2a370586f14a7e7608c3b78efc30f490e99ec",
+      "bytes": 469
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/utils/asyncHandler.ts",
+      "sha256": "749ef07151604b6332a16ef4cc108df95a39a9488d726889ece465b0f7615b10",
+      "bytes": 462
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/utils/cliente.ts",
+      "sha256": "ae962e5faec16ae98a18fa1ae129c1b7c63462b1e6e4a56222d2e4bbf2efa332",
+      "bytes": 336
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/utils/jwt.ts",
+      "sha256": "29b6e43b76a6878bc3b6b723b1d0eb02c947e462efa13cdd1781b9a78d0ab256",
+      "bytes": 595
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/utils/limiteIntentos.ts",
+      "sha256": "6d93b51eb2d7d778ceb91907d86762630c6d5d265e0fd7cbd86202b44e5d6887",
+      "bytes": 1787
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/utils/pedido.ts",
+      "sha256": "dfdad3c6971a4cc23cd915a86f9bc10a4a58f97103461ff84640888c4eb93218",
+      "bytes": 417
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/src/utils/tarjeta.ts",
+      "sha256": "86b592b7e5cb49f607b8ae10a25adcfc65d7efeaf6d3dfd9252681dcdf111a85",
+      "bytes": 6340
+    },
+    {
+      "path": "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/tsconfig.json",
+      "sha256": "c8d358e8e644a22a25b073e946d44a8337732f17e09c1c667987c48da9207e73",
+      "bytes": 372
+    },
+    {
+      "path": "servicio_proveedores_python_mysql_json/servicio_proveedores/.env.example",
+      "sha256": "6a538586144a9d0a5e31a2d1fbef06c9ec7957ad66a44e476102281a3bffcbd9",
+      "bytes": 88
+    },
+    {
+      "path": "servicio_proveedores_python_mysql_json/servicio_proveedores/README.md",
+      "sha256": "68ce5d972aff5fa6f8aeb2b27c63b5f7ee83c9d9cf7895eb9a156668cc1b1579",
+      "bytes": 2596
+    },
+    {
+      "path": "servicio_proveedores_python_mysql_json/servicio_proveedores/app.py",
+      "sha256": "d22bd026749eb28ebbe5908b787f60dd51e273b6b5105c6ce441c1802bf72ccb",
+      "bytes": 8254
+    },
+    {
+      "path": "servicio_proveedores_python_mysql_json/servicio_proveedores/postman_collection.json",
+      "sha256": "cc729c4af76cd377db22d5118ac24b341aee0cf5d693647912086282e23f522f",
+      "bytes": 1751
+    },
+    {
+      "path": "servicio_proveedores_python_mysql_json/servicio_proveedores/requirements.txt",
+      "sha256": "fe5112f7c81c417a795cd5d0ad9039a515a111bf57ec55faea9f7309b5646e16",
+      "bytes": 64
+    },
+    {
+      "path": "servicio_proveedores_python_mysql_json/servicio_proveedores/schema.sql",
+      "sha256": "e05236996c48831eb500b44591ea752c89344729d5e37661a7659725f9eaac40",
+      "bytes": 817
+    },
+    {
+      "path": "serviciopago/serviciopago/README.md",
+      "sha256": "d7cb11b93b3297b8848c2644143cf01508b627b53e512528e6031b11fb6de5be",
+      "bytes": 7076
+    },
+    {
+      "path": "serviciopago/serviciopago/app.py",
+      "sha256": "54ac6a3c250f605af4898e6098efc7864cab7a98e97776c7014d56e97fad2463",
+      "bytes": 8716
+    },
+    {
+      "path": "serviciopago/serviciopago/index.html",
+      "sha256": "5b792f7010d74d5f9ff472ed0a3405d90ea08e4a0e46421a32c622c4a7975574",
+      "bytes": 14205
+    },
+    {
+      "path": "serviciopago/serviciopago/requirements.txt",
+      "sha256": "1c64613fd9d182eb02848e8eb075b59887480387dc417a0b4a367de811885b99",
+      "bytes": 39
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Controllers/ProductosController.cs",
+      "sha256": "4912b025ed6fc6285174815851595ccfc01aee0e600f082081f1856cac105f9b",
+      "bytes": 2242
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Data/ProductoRepository.cs",
+      "sha256": "f9986960be0e64e726c752b0b87f6f498b76750e27bfab56618a25a4a2965115",
+      "bytes": 6910
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Models/ApiError.cs",
+      "sha256": "62318eb7880d12b7dee044dcda959bd726c5a1c8290477cefa5a2960d752680e",
+      "bytes": 338
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Models/ProductoRequest.cs",
+      "sha256": "6ad602d379f50d107f185d0afb9033b480e347ca3973602ce1478a28dc270844",
+      "bytes": 697
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Models/ProductoResponse.cs",
+      "sha256": "243db2fa136260b7e6e99e1113dda6a285f4a4e76969a2a2eee91f67620044df",
+      "bytes": 801
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/ProductosApi.csproj",
+      "sha256": "4cb3d85be8e344e48915a8ca4332fddf83008228d8af967f5f5359faa295b3cb",
+      "bytes": 438
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Program.cs",
+      "sha256": "87cfd8b5cdc8361b82482ddc856d54b6c6717ab744a23cff37631e0d2ca0321b",
+      "bytes": 963
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/Services/ProductoService.cs",
+      "sha256": "59de0329296805c3dca943e2059e14332a4d7aa0b875be5a407fc494d902ff82",
+      "bytes": 3334
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Backend/appsettings.json",
+      "sha256": "a8f0468d0a9bd4c25003158b9f738807bd1a3a5bc0064281cf285c704cab60a9",
+      "bytes": 282
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Database/schema.sql",
+      "sha256": "69ffd54cbe923319445ec7053c41456a6de4a8897ac107055fd5bc23a60dca94",
+      "bytes": 2356
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Frontend/index.html",
+      "sha256": "f0a7421616d37e0018edcf004f1a11fda40f7dcfe68beea215891fa6ad24f185",
+      "bytes": 2130
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Frontend/script.js",
+      "sha256": "85124e1504f5aec10b0e6f4390c5320ec660e7adbebdf249bfe876c59a093603",
+      "bytes": 2774
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/Frontend/style.css",
+      "sha256": "08dae203eed4ee02b0f6b830e34b14d581084290137d338d339bd9299b5151ec",
+      "bytes": 1346
+    },
+    {
+      "path": "soa-agregar-producto/soa-agregar-producto/README.md",
+      "sha256": "b1698525fdf0306a908893b326f6d214730e8dfadf175e1ae0d0af1e7a3ff419",
+      "bytes": 5277
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/.gitignore",
+      "sha256": "4ea6adcde83c31211ac8d6b56fcba362f168fcc5ba52be1c315a3034633a957d",
+      "bytes": 283
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/.readme",
+      "sha256": "73d2b228a73fba93764405a3ded6792ccf966995bda5850f08bf1882976f6dc8",
+      "bytes": 2499
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/.gitignore",
+      "sha256": "5f8cef22d5d282185bcb8ad2ee12688e7628625ca82cdef3a0f33618fad5e6e8",
+      "bytes": 14
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/data/db.json",
+      "sha256": "1c79bd607bbd31ba7bcc4eb3e74f40487cc3ce5da58b84f6fb385e13e4b51121",
+      "bytes": 599
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/package-lock.json",
+      "sha256": "6ce97e74ff7da700ddafa1cb08169b4b7ea9844a4c945e7b5dfbb20398d6ce00",
+      "bytes": 65858
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/package.json",
+      "sha256": "4d4689f8a6d9c05dd33e3b4ba2fa2135b53cbd6df9378c7749d2612f77bafc41",
+      "bytes": 690
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/src/config/env.ts",
+      "sha256": "7c80817e2f18bb3ad411945cdc2eb5fb99726dbd7e7070460924a18f66b92101",
+      "bytes": 486
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/src/server.ts",
+      "sha256": "58934d4b51887387c12cfc05f18dff7c52a381d74b6868913a242381bab8379b",
+      "bytes": 7316
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/src/services/email.service.ts",
+      "sha256": "4e9a3108846429395872e5ebd707913ffba5fdf8c66b795fb0ba2cb78804c59d",
+      "bytes": 4429
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/src/services/password-recovery.service.ts",
+      "sha256": "437d01f4ee234efdd5d9cb15ca6f3c8190edfc84d4d4a968c703af5a59968f25",
+      "bytes": 10928
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/tsconfig.json",
+      "sha256": "2c94ee38520fdd6dca600fe946490659139c2e017a9a7c5b9c60a6b54b9cee81",
+      "bytes": 318
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/.gitignore",
+      "sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8",
+      "bytes": 253
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/index.html",
+      "sha256": "46718225d71b87afe24b737cf8d14a351257acde77080524669092b396f47ad3",
+      "bytes": 6460
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/package-lock.json",
+      "sha256": "1f5ae4bb68412589f2e8e70e5a9459d40c23fa1822beae1d97bdcc7c54a3e0bc",
+      "bytes": 45866
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/package.json",
+      "sha256": "b3ad4b67445e62fb8f8a349ae4ab82f24fd30060decf743cd4dddd061ffeef5f",
+      "bytes": 354
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/public/favicon.svg",
+      "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66",
+      "bytes": 9522
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/public/icons.svg",
+      "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a",
+      "bytes": 5031
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/src/assets/hero.png",
+      "sha256": "881ffbcaafc212e49addad08846a5b82761355fa20624253af3477ba33262c5c",
+      "bytes": 13057
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/src/assets/typescript.svg",
+      "sha256": "e45b2f008f0a40c1011b0fd460081f8bb00df063a41240449159da164724d96c",
+      "bytes": 1303
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/src/assets/vite.svg",
+      "sha256": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f",
+      "bytes": 8709
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/src/main.ts",
+      "sha256": "1a4ca99af9efacf0c93ae306896e3bcf6dfa6524fbf34f2689237f75ae982457",
+      "bytes": 2101
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/src/style.css",
+      "sha256": "944e6e12c0067a6767836a78ad6c4095b829f966b44f33bc95cfef1401ab3c10",
+      "bytes": 22
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/tsconfig.json",
+      "sha256": "132c62cab1e0f7b7cdd6ab4c4ffe9e96dc959f41b7197607d18253a8a9402bd1",
+      "bytes": 560
+    },
+    {
+      "path": "soa-servicio-reset-password-main/soa-servicio-reset-password-main/frontend/vite.config.ts",
+      "sha256": "9682dcddffd8ec7c384ef838c59b50032ffc8069e935ebb2f9ca1756f0d0a231",
+      "bytes": 153
+    },
+    {
+      "path": "ticket_service/README.md",
+      "sha256": "36a07a3fd1720310ff59c455d20edf5b9840a00037913acdbc3a6765edfdcad4",
+      "bytes": 5213
+    },
+    {
+      "path": "ticket_service/app/config.py",
+      "sha256": "344889dcf2457b44f7095af0ef12d77138980bbd378b1bc4a98d3dc3c2799a44",
+      "bytes": 233
+    },
+    {
+      "path": "ticket_service/app/database.py",
+      "sha256": "2ac5540fb2fbac147681a8c76b17cf604cd07158ebbc46252c33cfb287b992d9",
+      "bytes": 426
+    },
+    {
+      "path": "ticket_service/app/main.py",
+      "sha256": "808e1ce35f19d5593dc767d62d095e1442d3e131a77412631b53afc6814beec9",
+      "bytes": 3455
+    },
+    {
+      "path": "ticket_service/app/models.py",
+      "sha256": "f97b3774609ebe40ab7b322fb0833ec18a183472fa4aa9fb92056dbedc44c115",
+      "bytes": 2127
+    },
+    {
+      "path": "ticket_service/app/schemas.py",
+      "sha256": "2e197bd4685cb455f5eb513dc6c5d9d1b571456ea0113a294677a5ffd2c52c27",
+      "bytes": 248
+    },
+    {
+      "path": "ticket_service/app/templates/ticket_template.html",
+      "sha256": "314c57e87da00d66ad77aae03761f5714641ab2b4bc25e8166f4e7c6deb5a8c8",
+      "bytes": 2342
+    },
+    {
+      "path": "ticket_service/requirements.txt",
+      "sha256": "38ccdfb28030b74d45b60d8ea2a03c919d696dbe6eeabbaaebb57d8752fd7939",
+      "bytes": 89
+    },
+    {
+      "path": "verificacion-bot/verificacion-bot/.postman/resources.yaml",
+      "sha256": "161629a8cd5d776087034fa976eb0978f01982407c74ebb1b4dfb50ec64217c7",
+      "bytes": 344
+    },
+    {
+      "path": "verificacion-bot/verificacion-bot/README.md",
+      "sha256": "c8810ce3f0c5f2f977911b6422d94dd8ee1b2019d26851144f22f5607422db23",
+      "bytes": 11261
+    },
+    {
+      "path": "verificacion-bot/verificacion-bot/package-lock.json",
+      "sha256": "736e12b3b2cb13a3a30eb4330cd2147e2d96a13da265adaa81d7707282f5152c",
+      "bytes": 32064
+    },
+    {
+      "path": "verificacion-bot/verificacion-bot/package.json",
+      "sha256": "f6287261ceabea68aa76cca05839557a9d1d2b27bc5e136bf31b3f05a670318d",
+      "bytes": 337
+    },
+    {
+      "path": "verificacion-bot/verificacion-bot/postman/globals/workspace.globals.yaml",
+      "sha256": "076fce60d017960ae9e3f59416783c958d152801cab4352d18b7498c3c81bb05",
+      "bytes": 25
+    },
+    {
+      "path": "verificacion-bot/verificacion-bot/server.js",
+      "sha256": "d86365f6e4c5749baf460f39735360452e5589df7b3be4d6b6430e5a3c3a0a36",
+      "bytes": 2841
+    }
+  ],
+  "excluded": [
+    "AlertaStockMinimo/AlertaStockMinimo/AlertaStockMinimo.csproj.user",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/HEAD",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/config",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/description",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/applypatch-msg.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/commit-msg.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/fsmonitor-watchman.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/post-update.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/pre-applypatch.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/pre-commit.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/pre-merge-commit.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/pre-push.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/pre-rebase.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/pre-receive.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/prepare-commit-msg.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/push-to-checkout.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/sendemail-validate.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/hooks/update.sample",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/index",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/info/exclude",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/logs/HEAD",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/logs/refs/heads/main",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/logs/refs/remotes/origin/HEAD",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/objects/pack/pack-6bfdd4b6f5574ece2be401136a2de2d2a6bb3e24.idx",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/objects/pack/pack-6bfdd4b6f5574ece2be401136a2de2d2a6bb3e24.pack",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/objects/pack/pack-6bfdd4b6f5574ece2be401136a2de2d2a6bb3e24.rev",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/packed-refs",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/refs/heads/main",
+    "DEVOLUCIONES  MATA/files/DEVOLUCIONES-SOA/.git/refs/remotes/origin/HEAD",
+    "DEVOLUCIONES  MATA/files/tienda.db",
+    "Inventario/Inventario/.vscode/settings.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/Microsoft.OpenApi.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/StockOfertasApi",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/StockOfertasApi.deps.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/StockOfertasApi.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/StockOfertasApi.pdb",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/StockOfertasApi.runtimeconfig.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/appsettings.Development.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/bin/Debug/net8.0/appsettings.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.AssemblyInfo.cs",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.AssemblyInfoInputs.cache",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.GeneratedMSBuildEditorConfig.editorconfig",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.GlobalUsings.g.cs",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.MvcApplicationPartsAssemblyInfo.cache",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.MvcApplicationPartsAssemblyInfo.cs",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.assets.cache",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.csproj.AssemblyReference.cache",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.csproj.CopyComplete",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.csproj.CoreCompileInputs.cache",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.csproj.FileListAbsolute.txt",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.genruntimeconfig.cache",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/StockOfertasApi.pdb",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/apphost",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/ref/StockOfertasApi.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/refint/StockOfertasApi.dll",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/staticwebassets/msbuild.build.StockOfertasApi.props",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.StockOfertasApi.props",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.StockOfertasApi.props",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/Debug/net8.0/staticwebassets.build.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/StockOfertasApi.csproj.nuget.dgspec.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/StockOfertasApi.csproj.nuget.g.props",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/StockOfertasApi.csproj.nuget.g.targets",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/project.assets.json",
+    "MicroservicioStockMaxOfertas/MicroservicioStockMaxOfertas/StockOfertasApi/obj/project.nuget.cache",
+    "comentarios-resenas-service/comentarios-resenas-service/.env",
+    "microservicio-login/microservicio-login/.env",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/.env",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/__pycache__/__init__.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/__pycache__/main.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/database/__pycache__/connection.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/database/__pycache__/models.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/database/__pycache__/session.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/routes/__pycache__/__init__.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/routes/__pycache__/validacion.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/schemas/__pycache__/__init__.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/schemas/__pycache__/validacion.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/services/__pycache__/__init__.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/services/__pycache__/validacion_service.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/simulador/__pycache__/__init__.cpython-313.pyc",
+    "microservicio-validacion-entregas/microservicio-validacion-entregas/app/simulador/__pycache__/paqueteria.cpython-313.pyc",
+    "modulo_comprobante/app/__pycache__/__init__.cpython-314.pyc",
+    "modulo_comprobante/app/__pycache__/main.cpython-314.pyc",
+    "servicio-reporte-compras (2)/servicio-reporte-compras/.env",
+    "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/.vscode/extensions.json",
+    "servicio-verificacion-tarjeta/servicio-verificacion-tarjeta/.vscode/launch.json",
+    "servicio_proveedores_python_mysql_json/servicio_proveedores/.env",
+    "soa-servicio-reset-password-main/soa-servicio-reset-password-main/api/.env",
+    "ticket_service/.env",
+    "ticket_service/app/__pycache__/config.cpython-313.pyc",
+    "ticket_service/app/__pycache__/database.cpython-313.pyc",
+    "ticket_service/app/__pycache__/main.cpython-313.pyc",
+    "ticket_service/app/__pycache__/models.cpython-313.pyc",
+    "ticket_service/tickets.db"
+  ]
+}

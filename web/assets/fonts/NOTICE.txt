@@ -1,0 +1,1 @@
+Roboto font family. Copyright Google. Licensed under the Apache License, Version 2.0. Local Latin WOFF2 files distributed with Vuetify. Font files unchanged.

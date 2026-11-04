@@ -1,0 +1,10 @@
+[
+{"id":1,"nombre":"Arnés Terra","precio":54900,"stock":20,"categoria":"Paseo","imagen":"harness","descripcion":"Arnés acolchado ajustable, talla M. Tejido transpirable y doble punto de sujeción. Para paseos cómodos todos los días."},
+{"id":2,"nombre":"Correa Adventure","precio":32900,"stock":30,"categoria":"Paseo","imagen":"leash","descripcion":"Correa de cuerda de 1.5 m con mosquetón metálico y agarre suave. Color terracota."},
+{"id":3,"nombre":"Collar Oliva","precio":24900,"stock":25,"categoria":"Paseo","imagen":"collar","descripcion":"Collar de nylon regulable de 30 a 45 cm. Hebilla de liberación rápida y anilla para placa."},
+{"id":4,"nombre":"Pelota Orbit","precio":15900,"stock":40,"categoria":"Juego","imagen":"ball","descripcion":"Pelota de caucho con textura. Diámetro 7 cm. Usar bajo supervisión y retirar si presenta daños."},
+{"id":5,"nombre":"Cama Nube","precio":89900,"stock":12,"categoria":"Descanso","imagen":"bed","descripcion":"Cama de 65 × 50 cm con funda extraíble lavable. Relleno suave y base antideslizante."},
+{"id":6,"nombre":"Bowl Duna","precio":29900,"stock":24,"categoria":"Hogar","imagen":"bowl","descripcion":"Plato de acero inoxidable con base de silicona. Capacidad de 750 ml. Fácil de limpiar."},
+{"id":7,"nombre":"Cuerda Nudo","precio":13900,"stock":35,"categoria":"Juego","imagen":"rope","descripcion":"Juguete de cuerda trenzada de algodón, 25 cm. Para juego compartido bajo supervisión."},
+{"id":8,"nombre":"Portabolsas Go","precio":11900,"stock":45,"categoria":"Paseo","imagen":"bag","descripcion":"Dispensador compacto con clip para correa. Incluye un rollo de 15 bolsas."}
+]

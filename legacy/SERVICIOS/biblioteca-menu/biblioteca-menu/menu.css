@@ -1,0 +1,350 @@
+/* =====================================================
+   BIBLIOTECA DE MENÚ
+   ===================================================== */
+
+
+/* =====================================================
+   BARRA PRINCIPAL DEL MENÚ
+   ===================================================== */
+
+/* Contenedor principal de la biblioteca. */
+.menu {
+
+    /* Coloca los elementos en una fila. */
+    display: flex;
+
+    /* Centra verticalmente los elementos. */
+    align-items: center;
+
+    /* Ocupa todo el ancho disponible. */
+    width: 100%;
+
+    /* Espacio interno del menú. */
+    padding: 15px 20px;
+}
+
+
+/* =====================================================
+   POSICIÓN DE LA BARRA DE BÚSQUEDA
+   ===================================================== */
+
+/* -----------------------------------------------------
+   ESTRUCTURA GENERAL
+   ----------------------------------------------------- */
+
+/* Distribuye los elementos a lo largo del menú. */
+.menu.busqueda-derecha,
+.menu.busqueda-izquierda,
+.menu.busqueda-centro {
+
+    justify-content: space-between;
+}
+
+
+/* -----------------------------------------------------
+   BÚSQUEDA A LA IZQUIERDA
+   ----------------------------------------------------- */
+
+/* Coloca el buscador primero. */
+.menu.busqueda-izquierda .busqueda-menu {
+
+    order: 1;
+}
+
+/* Coloca la identidad después del buscador. */
+.menu.busqueda-izquierda .identidad-tienda {
+
+    order: 2;
+}
+
+/* Coloca las opciones al final. */
+.menu.busqueda-izquierda .opciones-menu {
+
+    order: 3;
+}
+
+
+/* -----------------------------------------------------
+   BÚSQUEDA AL CENTRO
+   ----------------------------------------------------- */
+
+/* Coloca la identidad primero. */
+.menu.busqueda-centro .identidad-tienda {
+
+    order: 1;
+}
+
+/* Coloca el buscador en el centro. */
+.menu.busqueda-centro .busqueda-menu {
+
+    order: 2;
+}
+
+/* Coloca las opciones al final. */
+.menu.busqueda-centro .opciones-menu {
+
+    order: 3;
+}
+
+
+/* -----------------------------------------------------
+   BÚSQUEDA A LA DERECHA
+   ----------------------------------------------------- */
+
+/* Coloca la identidad primero. */
+.menu.busqueda-derecha .identidad-tienda {
+
+    order: 1;
+}
+
+/* Coloca las opciones después de la identidad. */
+.menu.busqueda-derecha .opciones-menu {
+
+    order: 2;
+}
+
+/* Coloca el buscador al final. */
+.menu.busqueda-derecha .busqueda-menu {
+
+    order: 3;
+}
+
+
+/* =====================================================
+   IDENTIDAD DE LA TIENDA
+   ===================================================== */
+
+/* Contenedor que agrupa el logo y el nombre. */
+.identidad-tienda {
+
+    /* Coloca logo y nombre horizontalmente. */
+    display: flex;
+
+    /* Centra ambos elementos verticalmente. */
+    align-items: center;
+
+    /* Espacio entre logo y nombre. */
+    gap: 10px;
+}
+
+
+/* -----------------------------------------------------
+   LOGO
+   ----------------------------------------------------- */
+
+/* Define las características visuales del logo. */
+.logo-tienda {
+
+    /* Ancho predeterminado del logo. */
+    width: 40px;
+
+    /* Alto predeterminado del logo. */
+    height: 40px;
+
+    /* Mantiene la proporción de la imagen. */
+    object-fit: contain;
+}
+
+
+/* -----------------------------------------------------
+   NOMBRE DE LA TIENDA
+   ----------------------------------------------------- */
+
+/* Define la apariencia básica del nombre. */
+.nombre-tienda {
+
+    /* Tamaño predeterminado del texto. */
+    font-size: 20px;
+
+    /* Hace que el nombre destaque visualmente. */
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   OPCIONES DEL MENÚ
+   ===================================================== */
+
+/* Contenedor de las opciones de navegación. */
+.opciones-menu {
+
+    /* Coloca las opciones horizontalmente. */
+    display: flex;
+
+    /* Centra verticalmente las opciones. */
+    align-items: center;
+
+    /* Espacio entre cada opción. */
+    gap: 20px;
+}
+
+
+/* -----------------------------------------------------
+   ENLACES
+   ----------------------------------------------------- */
+
+/* Define la apariencia de los enlaces. */
+.opciones-menu a {
+
+    /* Utiliza el color configurado por el consumidor. */
+    color: var(--color-texto);
+
+    /* Elimina el subrayado predeterminado. */
+    text-decoration: none;
+
+    /* Da un poco más de peso al texto. */
+    font-weight: 500;
+}
+
+
+/* -----------------------------------------------------
+   EFECTO HOVER
+   ----------------------------------------------------- */
+
+/* Cambia el color cuando el cursor pasa sobre una opción. */
+.opciones-menu a:hover {
+
+    /* Utiliza el color hover configurado. */
+    color: var(--color-hover);
+}
+
+
+/* =====================================================
+   BARRA DE BÚSQUEDA
+   ===================================================== */
+
+/* Contenedor completo del buscador. */
+.busqueda-menu {
+
+    /* Coloca el campo y el botón en una fila. */
+    display: flex;
+
+    /* Centra los elementos verticalmente. */
+    align-items: center;
+
+    /* Altura del buscador. */
+    height: 36px;
+
+    /* Borde exterior del buscador. */
+    border: 1px solid #ccc;
+
+    /* Hace completamente redondeados los extremos. */
+    border-radius: 999px;
+
+    /* Mantiene los elementos dentro de los bordes redondeados. */
+    overflow: hidden;
+
+    /* Fondo blanco del buscador. */
+    background-color: #ffffff;
+}
+
+
+/* -----------------------------------------------------
+   CAMPO DE BÚSQUEDA
+   ----------------------------------------------------- */
+
+/* Define la apariencia del campo de texto. */
+.input-busqueda {
+
+    /* Altura del campo. */
+    height: 34px;
+
+    /* Espacio interno del texto. */
+    padding: 8px 10px;
+
+    /* Elimina el borde predeterminado. */
+    border: none;
+
+    /* Elimina el contorno predeterminado al seleccionarlo. */
+    outline: none;
+
+    /* Tamaño predeterminado del texto. */
+    font-size: 14px;
+
+    /* Permite utilizar el fondo del contenedor. */
+    background-color: transparent;
+
+    /* Color predeterminado del texto. */
+    color: #222222;
+}
+
+
+/* -----------------------------------------------------
+   TEXTO DE AYUDA DEL BUSCADOR
+   ----------------------------------------------------- */
+
+/* Define el color del texto "Buscar..." u otro placeholder. */
+.input-busqueda::placeholder {
+
+    color: #777777;
+}
+
+
+/* -----------------------------------------------------
+   CAMPO SELECCIONADO
+   ----------------------------------------------------- */
+
+/* Mantiene el borde controlado por el contenedor. */
+.input-busqueda:focus {
+
+    border-color: #ccc;
+}
+
+
+/* -----------------------------------------------------
+   BOTÓN DE BÚSQUEDA
+   ----------------------------------------------------- */
+
+/* Define la apariencia del botón con la lupa. */
+.boton-busqueda {
+
+    /* Ancho del botón. */
+    width: 38px;
+
+    /* Altura del botón. */
+    height: 34px;
+
+    /* Elimina espacio interno predeterminado. */
+    padding: 0;
+
+    /* Elimina margen predeterminado. */
+    margin: 0;
+
+    /* Elimina el borde propio del botón. */
+    border: none;
+
+    /* Utiliza el fondo blanco del buscador. */
+    background-color: transparent;
+
+    /* Color del icono. */
+    color: #222222;
+
+    /* Muestra el cursor de botón. */
+    cursor: pointer;
+
+    /* Tamaño del icono. */
+    font-size: 16px;
+
+    /* Controla la altura de línea del icono. */
+    line-height: 1;
+
+    /* Permite centrar correctamente el icono. */
+    display: flex;
+
+    /* Centra verticalmente el icono. */
+    align-items: center;
+
+    /* Centra horizontalmente el icono. */
+    justify-content: center;
+}
+
+
+/* -----------------------------------------------------
+   EFECTO HOVER DEL BOTÓN
+   ----------------------------------------------------- */
+
+/* Cambia ligeramente el fondo al pasar el cursor. */
+.boton-busqueda:hover {
+
+    background-color: #f2f2f2;
+}

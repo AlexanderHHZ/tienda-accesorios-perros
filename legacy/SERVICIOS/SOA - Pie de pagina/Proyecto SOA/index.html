@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Aplicacion</title>
+    </head>
+    <body>
+
+        <main style="padding: 2rem;">
+            <h1>Página Principal</h1>
+            <p>Este es el contenido de la aplicación.</p>
+        </main>
+
+        <!-- Aquí usamos nuestra etiqueta personalizada basada en SOA -->
+         <app-footer 
+            company="Mi Empresa Tech"
+            logo-url="https://upload.wikimedia.org/wikipedia/commons/e/e2/Calvin_klein_logo.svg"
+            bg-color="#ffffff"
+            text-color="#000000"
+            font-family="'Helvetica Neue', Arial, sans-serif"
+            facebook="https://facebook.com"
+            instagram="https://instagram.com"
+            x-twitter="https://x.com"
+            youtube="https://youtube.com">
+
+            <!-- Sección Servicio al cliente -->
+            <a slot="servicio-cliente" href="/faqs">Preguntas Frecuentes</a>
+            <a slot="servicio-cliente" href="/devoluciones">Devoluciones</a>
+            <a slot="servicio-cliente" href="/tiendas">Nuestras Tiendas</a>
+            <a slot="servicio-cliente" href="/facturacion">Facturación</a>
+
+            <!-- Sección Acerca de -->
+            <a slot="acerca-de" href="/privacidad">Aviso de Privacidad</a>
+            <a slot="acerca-de" href="/terminos">Términos y Condiciones</a>
+            <a slot="acerca-de" href="/sustentabilidad">Sustentabilidad</a>
+
+            <!-- Sección Contacto -->
+            <a slot="contacto" href="mailto:soporte@tienda.com">Escríbenos</a>
+            <a slot="contacto" href="tel:5541614842">Atención: 55 4161 4842</a>
+        </app-footer>
+
+        <!-- Vinculamos el archivo JS que creará el componente -->
+         <script src="app-footer.js"></script>
+    </body>
+</html>

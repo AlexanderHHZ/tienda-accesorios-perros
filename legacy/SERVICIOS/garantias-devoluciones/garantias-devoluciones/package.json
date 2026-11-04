@@ -1,0 +1,36 @@
+{
+  "name": "garantias-devoluciones",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Servicio académico independiente de garantías y devoluciones, con REST, OpenAPI y persistencia en memoria.",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "predev": "npm run build:css",
+    "dev": "node --watch --env-file-if-exists=.env --import tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "build:css": "tailwindcss -i ./src/http/docs/integration.css -o ./dist/http/docs/integration.css --minify",
+    "build": "tsc -p tsconfig.build.json && npm run build:css",
+    "start": "node --env-file-if-exists=.env dist/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@fastify/swagger": "9.9.0",
+    "@fastify/swagger-ui": "6.1.1",
+    "fastify": "5.12.5",
+    "fastify-type-provider-zod": "7.0.0",
+    "marked": "18.0.14",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "@types/node": "^24.0.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.2"
+  }
+}

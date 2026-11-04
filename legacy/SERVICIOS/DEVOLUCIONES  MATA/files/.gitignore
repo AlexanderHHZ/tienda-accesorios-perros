@@ -1,0 +1,5 @@
+node_modules/
+tienda.db
+tienda.db-*
+.env
+.vscode/
